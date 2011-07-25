@@ -1,0 +1,46 @@
+{
+	"site": {
+		"name": "Sapporojs",
+		"href": "/",
+		"description": "We like JavaScript.",
+		"theme": "w-future2"
+	},
+	"copyright": {
+		"href": "http://sapporojs.no.de/",
+		"text": "sapporojs"
+	},
+	"admin": {
+		"id": "admin",
+		"pass": "passwd"
+	},
+	"globalNavi": [
+		{
+			"href": "/",
+			"text": "Home",
+            "current": true
+		},
+		{
+			"href": "http://qwik.jp/sapporojs/",
+			"text": "qwik"
+		}
+	],
+	"sidebar": {
+		"about": "このページは Sapporo.js の活動について紹介するページです.",
+		"author": {
+			"name": "tricknotes",
+			"img": "/file/author.png",
+			"links": [
+				{
+					"href": "http://twitter.com/#!/tricknotes",
+					"text": "Twitter(@tricknotes)"
+				}
+            ]
+		},
+		"links": [
+			{
+				"href": "/admin/login/",
+				"text": "Admin Login"
+			}
+		]
+	}
+}
