@@ -13,7 +13,7 @@ http://sapporojs.org
 1. Node.js ( http://nodejs.org/ ) をインストールする  
 Mac OS X を利用している場合、 Homebrew ( http://mxcl.github.com/homebrew/ ) を利用すると手軽にインストールできます。  
  <pre>
- $ brew install nodejs
+ $ brew install node
  </pre>
 2. npm ( http://npmjs.org/ ) をインストールする
 3. Looseleaf ( http://looseleafjs.org/ ) をインストールする
