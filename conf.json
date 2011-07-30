@@ -1,13 +1,13 @@
 {
 	"site": {
-		"name": "Sapporojs",
+		"name": "Sapporo.js",
 		"href": "/",
 		"description": "We like JavaScript.",
 		"theme": "w-future2"
 	},
 	"copyright": {
 		"href": "http://sapporojs.org/",
-		"text": "sapporojs"
+		"text": "Sapporo.js"
 	},
 	"admin": {
 	},
