@@ -20,7 +20,11 @@
 		{
 			"href": "http://qwik.jp/sapporojs/",
 			"text": "qwik"
-		}
+		},
+        {
+            "href": "https://github.com/tricknotes/sapporojs-web",
+            "text": "GitHub"
+        }
 	],
 	"sidebar": {
 		"about": "このページは Sapporo.js の活動について紹介するページです.",
