@@ -11,7 +11,7 @@ exports = ll.app;
 
 /* Parse arguments */
 var args = process.argv.slice(2);
-var port = 3000;
+var port = 80;
 var isDaemon;
 while (args.length) {
   switch (args.shift()) {
