@@ -10,8 +10,6 @@
 		"text": "sapporojs"
 	},
 	"admin": {
-		"id": "admin",
-		"pass": "passwd"
 	},
 	"globalNavi": [
 		{
