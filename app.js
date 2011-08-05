@@ -7,7 +7,7 @@ var looseleaf = require('looseleaf');
 
 /* Create express server and exports for spark */
 var ll = looseleaf.init(__dirname);
-exports = ll.app;
+exports.app = ll.app;
 
 /* Parse arguments */
 var args = process.argv.slice(2);
