@@ -4,6 +4,7 @@
 
 /* Load modules */
 var looseleaf = require('looseleaf');
+require('coffee-script')
 
 /* Create express server and exports for spark */
 var ll = looseleaf.init(__dirname);
@@ -32,4 +33,5 @@ while (args.length) {
 /* Only listen on $ node app.js */
 if (!module.parent) {
   ll.listen(port, isDaemon);
+  require('./firefly').listen(ll.app);
 }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/common.css" />
   <link rel="stylesheet" href="/lib/exvalidation/exvalidation.css" />
   <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-16255135-2']);
@@ -21,5 +22,37 @@
   })();
   </script>
 <%- body %>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/js/cursor.js"></script>
+  <script type="text/javascript" >
+    var socket = io.connect('/');
+    socket.on('info', function (data) {
+      console.log(JSON.stringify(data));
+    });
+    socket.on('entry cursor', function(data) {
+      Cursor.add(data.id);
+    });
+    socket.on('move cursor', function(data) {
+      var screen = data.screen;
+      var cursor = Cursor.get(data.id);
+      cursor.update(
+        screen.x * w.width() / screen.width,
+        screen.y * w.height() / screen.height
+      );
+    });
+    socket.on('disconnect', function(data) {
+      Cursor.remove(data.id);
+    });
+
+    var w = $(window);
+    w.mousemove(function(e) {
+      socket.emit('mouse position', {
+        width:  w.width(),
+        height: w.height(),
+        x: e.clientX,
+        y: e.clientY
+      });
+    });
+  </script>
 </body>
 </html>
