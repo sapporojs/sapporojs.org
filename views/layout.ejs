@@ -53,6 +53,37 @@
         y: e.clientY
       });
     });
+
+  </script>
+  <script>
+    jQuery(function($){
+      var counter = $('<div />');
+      counter
+        .width(36)
+        .height(36)
+        .attr('align', 'center')
+        .attr('valign', 'middle')
+        .css('font-size', '2em')
+        .css('top', 0)
+        .css('left', w.width() - counter.width())
+        .css('border-radius', 18)
+        .css('position', 'fixed')
+        .css('color', 'white')
+        .css('background-color', "rgb(128,30,0)") // for CSS2
+        .css('background-color', "rgba(128,30,0,0.4)")
+        .appendTo(document.body);
+      var noticeCount = function(count) {
+        counter
+          .css('left', w.width() - counter.width())
+          .text(count)
+          .fadeIn(2000, function() {
+            counter.fadeOut(1000);
+          });
+      }
+      socket.on('change count', function(data) {
+        noticeCount(data.clientCount);
+      });
+    });
   </script>
 </body>
 </html>
