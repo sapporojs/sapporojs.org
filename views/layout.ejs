@@ -25,6 +25,7 @@
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
   <script type="text/javascript" src="/js/cursor.js"></script>
   <script type="text/javascript" >
+    // for firefly
     var socket = io.connect('/');
     socket.on('info', function (data) {
       console.log(JSON.stringify(data));
@@ -53,23 +54,25 @@
         y: e.clientY
       });
     });
-
   </script>
   <script>
+    // for counter
     jQuery(function($){
       var counter = $('<div />');
       counter
-        .width(50)
-        .height(50)
         .attr('align', 'center')
-        .css('font-size', '3em')
-        .css('top', 0)
-        .css('left', w.width() - counter.width())
-        .css('border-radius', 25)
-        .css('position', 'fixed')
-        .css('color', 'white')
-        .css('background-color', "rgb(128,30,0)") // for CSS2
-        .css('background-color', "rgba(128,30,0,0.4)")
+        .css({
+          'font-size': '3em',
+          'top': 0,
+          'left': w.width() - counter.width(),
+          'width': 50,
+          'height': 50,
+          'border-radius': 25,
+          'position': 'fixed',
+          'color': 'white',
+          'background-color': "rgb(128,30,0)"
+        })
+        .css('background-color', "rgba(128,30,0,0.4)") // for CSS3
         .appendTo(document.body);
       var noticeCount = function(count) {
         counter
