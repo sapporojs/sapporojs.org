@@ -13,7 +13,7 @@
     <% } %>
   </ul>
   <h1><%= pageTitle %></h1>
-  <div class="section entry">  
+  <div class="section entry">
     <ul class="info">
       <!--li class="author">Posted by: <span class="name"><%= sidebar.author.name %></span></li-->
       <li class="date"><%= entry.date %></li>
@@ -34,7 +34,7 @@
       <!-- http://www.google.com/webmasters/+1/button/index.html -->
       <!-- Place this tag where you want the +1 button to render -->
       <g:plusone size="medium"></g:plusone>
-      
+
       <!-- http://developers.facebook.com/docs/reference/plugins/like/ -->
       <iframe src="http://www.facebook.com/plugins/like.php?href&amp;send=true&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
     </p>
@@ -115,7 +115,7 @@
         <% for (var i = 0; i < entry.trackbacks.length; i++) { %>
         <dt id="ping<%= i %>"<span class="name"><a href="<%= entry.trackbacks[i].url %>" rel="nofollow"><%= entry.trackbacks[i].title %></a></span> <span class="date"><%= entry.trackbacks[i].date %></span></dt>
         <dd><%= entry.trackbacks[i].excerpt %></dd>
-        <% } %>      
+        <% } %>
       </dl>
     </div>
     <!-- end div#trackback -->
@@ -124,7 +124,7 @@
   <p class="topicPath" id="path2"><a href="/">Home</a> &gt; <a href="/category/<%= entry.category %>/"><%= categories[entry.category].name %></a> &gt; <span class="current"><%= pageTitle %></span></p>
 </div>
 <!-- end main-->
-<%- partial('partials/utilities') %> 
+<%- partial('partials/utilities') %>
 <p class="return"><a href="#header" title="Return to top of page">Page Top</a></p>
 </div>
 <!--end content-->

@@ -63,7 +63,7 @@
         <li><a href="/category/<%= i %>/"><%= categories[i].name %></a> (<%= categories[i].entries.length %>)</li>
       <% } %>
       </ul>
-    </dd>    
+    </dd>
     <dt>Archives</dt>
     <dd>
       <ul>
@@ -71,7 +71,7 @@
           <% for (var m in calendar[y]) { %>
             <% var count = 0; %>
             <% for (var d in calendar[y][m]) { %>
-              <% count += calendar[y][m][d].length; %>              
+              <% count += calendar[y][m][d].length; %>
             <% } %>
             <li><a href="/archive/<%= y %>/<%= m %>/" rel="nofollow"><%= y %>-<%= m %></a>(<%= count %>)</li>
           <% } %>
@@ -106,7 +106,7 @@
       <ul class="tagCloud">
       <% for (var i in tags) { %>
         <%
-          var level = 'level'; 
+          var level = 'level';
           if (tags[i].length <= 10) {
             level = '6';
           }

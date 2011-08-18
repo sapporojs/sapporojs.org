@@ -35,11 +35,11 @@ for (var row = 0; row < 6; row++){
     var href = (calendar[year] && calendar[year][month] && calendar[year][month][date]) ? '/archive/' + year + '/' + month + '/' + date + '/': '';
     %>
     <td
-    <%- year == today.getFullYear() && month == today.getMonth() + 1 && date == today.getDate() ? ' class="today"' : '' %>    
+    <%- year == today.getFullYear() && month == today.getMonth() + 1 && date == today.getDate() ? ' class="today"' : '' %>
     >
-    <%- href ? '<a href="' + href + '">' : '' %>    
+    <%- href ? '<a href="' + href + '">' : '' %>
     <%= blank ? '&nbsp;' : date++ %>
-    <%- href ? '</a>' : '' %>    
+    <%- href ? '</a>' : '' %>
     </td>
     <%
   }
@@ -47,4 +47,4 @@ for (var row = 0; row < 6; row++){
   </tr>
   <%
 }
-  %>  
+  %>
