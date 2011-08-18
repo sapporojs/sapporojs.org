@@ -29,13 +29,9 @@
 	"sidebar": {
 		"about": "このページは Sapporo.js の活動について紹介するページです.",
 		"author": {
-			"name": "tricknotes",
+			"name": "Sapporo.js",
 			"img": "/file/author.png",
 			"links": [
-				{
-					"href": "http://twitter.com/#!/tricknotes",
-					"text": "Twitter(@tricknotes)"
-				}
             ]
 		},
 		"links": [
