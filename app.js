@@ -33,5 +33,7 @@ while (args.length) {
 /* Only listen on $ node app.js */
 if (!module.parent) {
   ll.listen(port, isDaemon);
-  require('./firefly').listen(ll.app);
+  if (ll.conf.site.sockets) {
+    require('./firefly').listen(ll.app);
+  }
 }

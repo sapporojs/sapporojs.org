@@ -23,70 +23,14 @@
   <%- partial('partials/analitics') %>
   <% } %>
 <%- body %>
+  <% if (site.sockets) { %>
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-  <script type="text/javascript" src="/js/cursor.js"></script>
   <script type="text/javascript" >
-    // for firefly
     var socket = io.connect('/');
-    socket.on('info', function (data) {
-      console.log(JSON.stringify(data));
-    });
-    socket.on('entry cursor', function(data) {
-      Cursor.add(data.id);
-    });
-    socket.on('move cursor', function(data) {
-      var screen = data.screen;
-      var cursor = Cursor.get(data.id);
-      cursor.update(
-        screen.x * w.width() / screen.width,
-        screen.y * w.height() / screen.height
-      );
-    });
-    socket.on('disconnect', function(data) {
-      Cursor.remove(data.id);
-    });
-
-    var w = $(window);
-    w.mousemove(function(e) {
-      socket.emit('mouse position', {
-        width:  w.width(),
-        height: w.height(),
-        x: e.clientX,
-        y: e.clientY
-      });
-    });
   </script>
-  <script>
-    // for counter
-    jQuery(function($){
-      var counter = $('<div />');
-      counter
-        .attr('align', 'center')
-        .css({
-          'font-size': '3em',
-          'top': 0,
-          'left': w.width() - counter.width(),
-          'width': 50,
-          'height': 50,
-          'border-radius': 25,
-          'position': 'fixed',
-          'color': 'white',
-          'background-color': "rgb(128,30,0)"
-        })
-        .css('background-color', "rgba(128,30,0,0.4)") // for CSS3
-        .appendTo(document.body);
-      var noticeCount = function(count) {
-        counter
-          .css('left', w.width() - counter.width())
-          .text(count)
-          .fadeIn(3000, function() {
-            counter.fadeOut(2000);
-          });
-      }
-      socket.on('change count', function(data) {
-        noticeCount(data.clientCount);
-      });
-    });
-  </script>
+  <% for (var i in site.sockets) { %>
+    <%- partial("js/" + site.sockets[i]) %>
+    <% } %>
+  <% } %>
 </body>
 </html>

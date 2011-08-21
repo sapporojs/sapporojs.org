@@ -5,7 +5,8 @@
     "description": "We like JavaScript.",
     "theme": "w-future2",
     "appleTouchIcon": "/file/tabineko-mini.png",
-    "googleAnalitics": "UA-16255135-2"
+    "googleAnalitics": "UA-16255135-2",
+    "sockets": ["firefly", "counter"]
   },
   "copyright": {
     "href": "http://sapporojs.org/",
