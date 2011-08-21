@@ -1,44 +1,43 @@
 {
-	"site": {
-		"name": "Sapporo.js",
-		"href": "/",
-		"description": "We like JavaScript.",
-		"theme": "w-future2"
-	},
-	"copyright": {
-		"href": "http://sapporojs.org/",
-		"text": "Sapporo.js"
-	},
-	"admin": {
-	},
-	"globalNavi": [
-		{
-			"href": "/",
-			"text": "Home",
-            "current": true
-		},
-		{
-			"href": "http://qwik.jp/sapporojs/",
-			"text": "qwik"
-		},
-        {
-            "href": "https://github.com/tricknotes/sapporojs-web",
-            "text": "GitHub"
-        }
-	],
-	"sidebar": {
-		"about": "このページは Sapporo.js の活動について紹介するページです.",
-		"author": {
-			"name": "Sapporo.js",
-			"img": "/file/tabineko.png",
-			"links": [
-            ]
-		},
-		"links": [
-			{
-				"href": "/admin/login/",
-				"text": "Admin Login"
-			}
-		]
-	}
+  "site": {
+    "name": "Sapporo.js",
+    "href": "/",
+    "description": "We like JavaScript.",
+    "theme": "w-future2"
+  },
+  "copyright": {
+    "href": "http://sapporojs.org/",
+    "text": "Sapporo.js"
+  },
+  "admin": {
+  },
+  "globalNavi": [
+    {
+      "href": "/",
+      "text": "Home",
+      "current": true
+    },
+    {
+      "href": "http://qwik.jp/sapporojs/",
+      "text": "qwik"
+    },
+    {
+      "href": "https://github.com/tricknotes/sapporojs-web",
+      "text": "GitHub"
+    }
+  ],
+  "sidebar": {
+    "about": "このページは Sapporo.js の活動について紹介するページです.",
+    "author": {
+      "name": "Sapporo.js",
+      "img": "/file/tabineko.png",
+      "links": []
+    },
+    "links": [
+      {
+        "href": "/admin/login/",
+        "text": "Admin Login"
+      }
+    ]
+  }
 }
