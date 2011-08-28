@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Sapporo.js</title>
 <link href="/" />
-<updated>2011-07-25T23:08:28+09:00</updated>
-<author><name>tricknotes</name></author>
-<id>urn:uuid:4eee7ddb-a60e-40ce-98d9-703b6dc67fd5</id>
+<updated>2011-08-28T15:35:57+09:00</updated>
+<author><name>Sapporo.js</name></author>
+<id>urn:uuid:9e4eb835-07d7-490c-9280-1f2b46719326</id>
+<entry>
+<title>Sapporo.js-2011.10.08 を開催します</title>
+<link href="/entry/4/" />
+<id>urn:uuid:891b67d3-81ad-4dd0-8e8c-355e2ed474e9</id>
+<updated>2011-08-28T15:35:57+09:00</updated>
+<summary>
+Sapporo.js-2011.10.08
+
+
+概要
+Sapporo.js-2011.10.08 を開催します
+
+場所
+札幌市民ホール第6会議室 （北海道札幌市北1条西1丁目）
+...</summary>
+</entry>
 <entry>
 <title>webサイト公開しました</title>
 <link href="/entry/3/" />
