@@ -1,0 +1,44 @@
+/* two-column format */
+body {
+    width: 980px;
+    margin: 20px auto;
+}
+
+#header {
+    display: block;
+    width: 670px;
+    position: absolute;
+}
+
+#content {
+    display: block;
+    width: 960px;
+    position: relative;
+}
+
+#main {
+    display: block;
+    width: 560px;
+    margin: 120px 0;
+    padding: 0 0 20px 0;
+    float:left;
+}
+
+#utilities {
+    margin: 0 660px;
+    width: 300px;
+    position:relative;
+}
+
+#content p.return {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+}
+
+#footer {
+    width: 960px;
+    margin: 0 auto;
+    clear: left;
+}
+
