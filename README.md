@@ -5,8 +5,7 @@ http://sapporojs.org
 ### 動作確認環境
 
 * Mac OS X Snow Leopard
-* Node.js 0.4.10
-* Looseleaf 0.3.2 Crayon
+* Node.js 0.4.11
 
 ### セットアップ
 
