@@ -7,7 +7,6 @@ body {
 #header {
     display: block;
     width: 560px;
-    padding: 0 380px 0 0;
     position: absolute;
 }
 
@@ -57,8 +56,47 @@ body {
     -webkit-border-radius: 20px;
 }
 
-.entry {
+div.entry {
     padding-top: 6px;
     background-image: url(img/article_separator.png);
     background-repeat: no-repeat;
+}
+
+/* apply style */
+h1 {
+    display: none;
+}
+
+#globalNavi {
+    padding: 0;
+}
+
+#globalNavi li {
+    display: inline;
+}
+
+div.entry ul.info {
+    padding: 0;
+}
+
+div.entry ul.info li {
+    display: inline;
+}
+
+div.entry ul.reaction {
+    margin: 0 auto 0 0;
+    display: block;
+    text-align: right;
+}
+
+div.entry ul.reaction li {
+    margin: 0 0 0 0.5em;
+    display: inline;
+}
+
+#footer ul.support {
+    padding: 0;
+}
+#footer ul.support li {
+    display: inline;
 }
