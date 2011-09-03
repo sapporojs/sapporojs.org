@@ -6,7 +6,8 @@ body {
 
 #header {
     display: block;
-    width: 670px;
+    width: 560px;
+    padding: 0 380px 0 0;
     position: absolute;
 }
 
@@ -19,14 +20,14 @@ body {
 #main {
     display: block;
     width: 560px;
-    margin: 120px 0;
+    margin: 120px 0 0 0;
     padding: 0 0 20px 0;
     float:left;
 }
 
 #utilities {
-    margin: 0 660px;
-    width: 300px;
+    margin: 0 0 0 580px;
+    width: 380px;
     position:relative;
 }
 
@@ -42,3 +43,22 @@ body {
     clear: left;
 }
 
+/* apply background */
+html {
+    background-image: url(img/background.jpg);
+    background-repeat: repeat;
+}
+
+body {
+    background-image: url(img/board.png);
+    background-repeat: repeat-y;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+.entry {
+    padding-top: 6px;
+    background-image: url(img/article_separator.png);
+    background-repeat: no-repeat;
+}
