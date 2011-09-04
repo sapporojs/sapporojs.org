@@ -21,7 +21,7 @@ body {
     display: block;
     width: 540px;
     margin: 120px 0 0 10px;
-    padding: 0 20px 20px 0;
+    padding: 0 20px 0 0;
     float:left;
 }
 
@@ -33,13 +33,12 @@ body {
 
 #content p.return {
     margin: 0;
-    position: absolute;
-    bottom: 20px;
+    position: relative;
+    clear: left;
 }
 
 #footer {
     width: 960px;
-    clear: left;
 }
 
 /* apply background */
