@@ -55,6 +55,34 @@ body {
     -webkit-border-radius: 20px;
 }
 
+p.siteName {
+    margin-top: 0;
+}
+
+p.siteName a, p.description {
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+}
+
+p.siteName a {
+    background-image: url(img/title.png);
+    width: 312px;
+    height: 65px;
+    float: left;
+}
+
+p.description {
+    background-image: url(img/description.png);
+    width: 182px;
+    height: 22px;
+    margin: 39px auto 0 324px;
+}
+
+#globalNavi {
+    clear: left;
+}
+
 div.entry {
     padding-top: 6px;
     background-image: url(img/article_separator.png);
@@ -101,8 +129,11 @@ div.entry ul.reaction li {
 }
 
 /* spacing */
+#header {
+    margin-top: 20px;
+}
 #header, #footer, #content p.return {
-    margin: 0 10px;
+    margin-left: 10px;
 }
 
 div.entry {
