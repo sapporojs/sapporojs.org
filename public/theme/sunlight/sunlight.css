@@ -8,6 +8,7 @@ body {
     display: block;
     width: 560px;
     position: absolute;
+    z-index: 2;
 }
 
 #content {
