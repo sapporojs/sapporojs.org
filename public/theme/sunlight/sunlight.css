@@ -56,6 +56,7 @@ div.textBody, dd {
 h2, h3, h4, h5, h6, #globalNavi {
     font-family: "Impact", "FreeSans", "sans-serif";
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -170,10 +171,33 @@ h1 {
 
 div.entry ul.info {
     padding: 0;
+    margin: 0;
 }
 
 div.entry ul.info li {
     display: inline;
+}
+
+div.entry ul.info .date {
+    float: left;
+    display: block;
+    width: 10em;
+    height: 1em;
+    overflow: hidden;
+}
+
+div.entry ul.info .update {
+    display: none;
+}
+
+div.entry ul.info .category {
+    margin-left: -3.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div.entry ul.info .category a {
+    color: #ee4444;
 }
 
 div.entry ul.reaction {
