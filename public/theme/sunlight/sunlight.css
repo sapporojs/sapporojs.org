@@ -163,7 +163,9 @@ h1 {
 }
 
 #globalNavi li {
-    display: inline;
+    list-style: none;
+    float: left;
+    width: 80px;
 }
 
 div.entry ul.info {
