@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* two-column format */
 body {
     width: 980px;
@@ -15,6 +17,8 @@ body {
     display: block;
     width: 960px;
     position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 #main {
@@ -39,6 +43,67 @@ body {
 
 #footer {
     width: 960px;
+}
+
+/* font and letter settings */
+body {
+    font-family: "sans-serif";
+    color: #4b4b4b;
+}
+
+div.textBody, dd {
+    line-height: 1.8;
+}
+
+h2, h3, h4, h5, h6, #globalNavi {
+    font-family: "Impact", "FreeSans", "sans-serif";
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+a {
+    color: #357ee3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#globalNavi {
+    font-size: 24px;
+}
+
+dl dt {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+dl dd p, dd ul {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+dd ul {
+    padding-left: 18px;
+}
+
+#footer {
+    font-size: 10px;
+    text-align: right;
+}
+
+#footer a {
+    color: #000011;
+}
+
+#footer ul {
+    margin: 0;
 }
 
 /* apply background */
@@ -95,6 +160,7 @@ h1 {
 }
 
 #globalNavi {
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -140,10 +206,16 @@ div.entry {
     margin-bottom: 1.5em;
 }
 
-dl.navi dt, dl.navi dd, dl.others dt, dl.others dd {
-    margin: 0 0 0 80px;
+dl.navi dt, dl.others dt {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+dl.navi dd, dl.others dd {
+    margin-left: 80px;
 }
 
 #footer {
-    padding: 0 0 12px 0;
+    margin: 24px 10px 0 10px;
+    padding-bottom: 20px;
 }
