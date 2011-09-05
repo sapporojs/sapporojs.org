@@ -8,30 +8,28 @@ body {
 
 #header {
     display: block;
-    width: 560px;
+    width: 620px;
     position: absolute;
     z-index: 2;
 }
 
 #content {
     display: block;
-    width: 960px;
+    width: 980px;
     position: relative;
-    margin-top: 20px;
     padding-top: 20px;
 }
 
 #main {
     display: block;
-    width: 540px;
-    margin: 120px 0 0 10px;
-    padding: 0 20px 0 0;
+    width: 620px;
+    margin: 120px 0 0 20px;
     float:left;
 }
 
 #utilities {
-    margin: 0 0 0 580px;
-    width: 380px;
+    margin: 0 20px 0 660px;
+    width: 300px;
     position:relative;
 }
 
@@ -42,7 +40,7 @@ body {
 }
 
 #footer {
-    width: 960px;
+    width: 940px;
 }
 
 /* font and letter settings */
@@ -78,7 +76,7 @@ a:hover {
 }
 
 dl dt {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -199,7 +197,7 @@ div.entry ul.reaction li {
     margin-top: 20px;
 }
 #header, #footer, #content p.return {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 div.entry {
@@ -216,6 +214,6 @@ dl.navi dd, dl.others dd {
 }
 
 #footer {
-    margin: 24px 10px 0 10px;
+    margin: 24px 20px 0 20px;
     padding-bottom: 20px;
 }
