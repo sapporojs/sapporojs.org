@@ -53,7 +53,7 @@ div.textBody, dd {
     line-height: 1.8;
 }
 
-h2, h3, h4, h5, h6, #globalNavi {
+h1, h2, h3, h4, h5, h6, #globalNavi {
     font-family: "Impact", "FreeSans", "sans-serif";
     font-weight: normal;
     margin-bottom: 0;
@@ -154,8 +154,12 @@ div.entry {
 }
 
 /* apply style */
-h1 {
+body.mainIndex h1 {
     display: none;
+}
+
+h1 {
+    margin: 0;
 }
 
 #globalNavi {
