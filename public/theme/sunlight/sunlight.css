@@ -162,6 +162,10 @@ h1 {
     margin: 0;
 }
 
+body.mainIndex .topicPath {
+    display: none;
+}
+
 #globalNavi {
     margin-top: 10px;
     padding: 0;
@@ -218,8 +222,13 @@ div.entry ul.reaction li {
 #footer ul.support {
     padding: 0;
 }
+
 #footer ul.support li {
     display: inline;
+}
+
+p.topicPath {
+    margin: 0;
 }
 
 /* spacing */
