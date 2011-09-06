@@ -147,21 +147,26 @@ p.description {
     clear: left;
 }
 
-body.mainIndex div.entry {
+body div.entry {
     padding-top: 6px;
     background-image: url(img/article_separator.png);
     background-repeat: no-repeat;
 }
 
+body.individual div.entry {
+    padding-top: 0;
+    background: none;
+}
+
 /* apply style */
-body.mainIndex h1 {
+body h1 {
     display: none;
 }
 
-h1 {
+body.individual h1 {
+    display: block;
     margin: 0;
     clear: both;
-
 }
 
 body.mainIndex .topicPath {
