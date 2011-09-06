@@ -256,3 +256,59 @@ dl.navi dd, dl.others dd {
     margin: 24px 20px 0 20px;
     padding-bottom: 20px;
 }
+
+/* calendar */
+.calendar {
+    border-top: 1px solid #6b6b6b;
+    border-left: 1px solid #6b6b6b;
+    font-size: 14px;
+    text-align: center;
+}
+
+.calendar caption { 
+    width: 211px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.calendar th.sun {
+    color: #ee4444;
+}
+
+.calendar th.sat {
+    color: #4444ee;
+}
+
+.calendar th {
+    background: rgba(52, 127, 229, 0.5);
+}
+
+.calendar td {
+    background: rgba(52, 52, 52, 0.08);
+}
+
+.calendar th, .calendar td {
+    border-bottom: 1px solid #6b6b6b;
+    border-right: 1px solid #6b6b6b;
+}
+
+.calendar th, .calendar td {
+    width: 29px;
+}
+
+.calendar td a {
+    margin: 0 auto;
+    font-weight: bold;
+    display: block;
+    width: 90%;
+    height: 100%;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    background: #ffffff;
+    
+}
+
+.calendar td a:hover {
+    background: #f2fe3c;
+}
