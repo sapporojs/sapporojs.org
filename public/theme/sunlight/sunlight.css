@@ -147,7 +147,7 @@ p.description {
     clear: left;
 }
 
-div.entry {
+body.mainIndex div.entry {
     padding-top: 6px;
     background-image: url(img/article_separator.png);
     background-repeat: no-repeat;
@@ -160,6 +160,8 @@ body.mainIndex h1 {
 
 h1 {
     margin: 0;
+    clear: both;
+
 }
 
 body.mainIndex .topicPath {
@@ -229,6 +231,18 @@ div.entry ul.reaction li {
 
 p.topicPath {
     margin: 0;
+}
+
+ul.flip {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#flip1 .newer, #flip1 .older {
+    margin-top: -1em;
+    margin-left: 0.5em;
+    float: right;
 }
 
 /* spacing */
