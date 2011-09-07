@@ -247,6 +247,12 @@ p.topicPath {
     margin: 0;
 }
 
+#path2 {
+    padding-top: 20px;
+    background-image: url(img/article_separator.png);
+    background-repeat: no-repeat;
+}
+
 ul.flip {
     list-style: none;
     margin: 0;
