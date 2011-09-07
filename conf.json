@@ -3,7 +3,7 @@
     "name": "Sapporo.js",
     "href": "/",
     "description": "We like JavaScript.",
-    "theme": "w-future2",
+    "theme": "sunlight",
     "appleTouchIcon": "/file/tabineko-mini.png",
     "googleAnalitics": "UA-16255135-2",
     "sockets": ["firefly", "counter"]
