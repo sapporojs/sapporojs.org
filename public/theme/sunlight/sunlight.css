@@ -56,10 +56,11 @@ div.textBody, dd {
 h1, h2, h3, h4, h5, h6, #globalNavi {
     font-family: "Impact", "FreeSans", "sans-serif";
     font-weight: normal;
+    margin-top: 0.4em;
     margin-bottom: 0;
 }
 
-h2 {
+h1, h2 {
     font-size: 28px;
 }
 
@@ -148,7 +149,7 @@ p.description {
 }
 
 body div.entry {
-    padding-top: 6px;
+    padding-top: 10px;
     background-image: url(img/article_separator.png);
     background-repeat: no-repeat;
 }
@@ -167,6 +168,9 @@ body.individual h1 {
     display: block;
     margin: 0;
     clear: both;
+    padding-top: 20px;
+    background-image: url(img/article_separator.png);
+    background-repeat: no-repeat;
 }
 
 body.mainIndex .topicPath {
