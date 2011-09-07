@@ -405,3 +405,28 @@ dl.navi dd, dl.others dd {
 div.section {
     clear: both;
 }
+
+/* comment and trackbacks */
+#comments, #trackback {
+    padding-top: 20px;
+    background-image: url(img/article_separator.png);
+    background-position: 0 16px;
+    background-repeat: no-repeat;
+}
+
+#trackback dl {
+    margin: 0;
+}
+
+#trackback dt {
+    margin-top: 1.2em;
+}
+
+#trackback dd {
+    margin-left: 0;
+    font-size: 14px;
+    padding-left: 3px;
+    border: 1px dotted;
+    background: rgba(255, 255, 255, 0.4);
+}
+
