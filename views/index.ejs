@@ -40,10 +40,10 @@
   <% if (next != null || prev != null) { %>
   <ul class="flip pager" id="flip2">
     <% if (prev != null) { %>
-    <li class="newer"><a href="/index/<%= prev %>/">Newer Entries</a></li>
+    <li class="older"><a href="/index/<%= prev %>/">Older Entries</a></li>
     <% } %>
     <% if (next != null) { %>
-    <li class="older"><a href="/index/<%= next %>/">Older Entries</a></li>
+    <li class="newer<a href="/index/<%= next %>/">Newer Entries</a></li>
     <% } %>
   </ul>
   <% } %>

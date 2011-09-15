@@ -6,10 +6,10 @@
   <p class="topicPath"><a href="/">Home</a> &gt; <a href="/category/<%= entry.category %>/"><%= categories[entry.category].name %></a> &gt; <span class="current"><%= pageTitle %></span></p>
   <ul class="flip" id="flip1">
     <% if (prev != null) { %>
-    <li class="newer"><a href="/entry/<%= prev.id %>/" title="<%= prev.title %>" rel="nofollow">Newer</a></li>
+    <li class="older"><a href="/entry/<%= prev.id %>/" title="<%= prev.title %>" rel="nofollow">Older</a></li>
     <% } %>
     <% if (next != null) { %>
-    <li class="older"><a href="/entry/<%= next.id %>/" title="<%= next.title %>" rel="nofollow">Older</a></li>
+    <li class="newer"><a href="/entry/<%= next.id %>/" title="<%= next.title %>" rel="nofollow">Newer</a></li>
     <% } %>
   </ul>
   <h1><%= pageTitle %></h1>
@@ -44,10 +44,10 @@
     <% if (next != null || prev != null) { %>
     <ul class="flip" id="flip2">
       <% if (prev != null) { %>
-      <li class="newer">Newer: <a href="/entry/<%= prev.id %>/" title="Newer entry"><%= prev.title %></a></li>
+      <li class="older">Older: <a href="/entry/<%= prev.id %>/" title="Older entry"><%= prev.title %></a></li>
       <% } %>
       <% if (next != null) { %>
-      <li class="older">Older: <a href="/entry/<%= next.id %>/" title="Older entry"><%= next.title %></a></li>
+      <li class="newer">Newer: <a href="/entry/<%= next.id %>/" title="Newer entry"><%= next.title %></a></li>
       <% } %>
     </ul>
     <% } %>
