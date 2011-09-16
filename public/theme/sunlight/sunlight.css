@@ -69,6 +69,7 @@ a {
     text-decoration: none;
 }
 
+#globalNavi li.current a,
 a:hover {
     text-decoration: underline;
 }
