@@ -318,7 +318,7 @@ dl.navi dd, dl.others dd {
     text-align: center;
 }
 
-.calendar caption { 
+.calendar caption {
     width: 211px;
     font-weight: bold;
     font-size: 16px;
@@ -359,7 +359,6 @@ dl.navi dd, dl.others dd {
     -moz-border-radius: 14px;
     -webkit-border-radius: 14px;
     background: #ffffff;
-    
 }
 
 .calendar td a:hover {
@@ -443,8 +442,6 @@ div.section {
     display: none;
 }
 
-
-
 #trackback dl {
     margin: 0;
 }
@@ -460,4 +457,3 @@ div.section {
     border: 1px dotted;
     background: rgba(255, 255, 255, 0.4);
 }
-
