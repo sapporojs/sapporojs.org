@@ -73,10 +73,6 @@ a:hover {
     text-decoration: underline;
 }
 
-#globalNavi {
-    font-size: 24px;
-}
-
 dl dt {
     font-size: 16px;
     font-weight: bold;
@@ -145,6 +141,9 @@ p.description {
 }
 
 #globalNavi {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 24px;
     clear: left;
 }
 
@@ -180,11 +179,6 @@ body.individual div.entry p {
 
 body.mainIndex .topicPath {
     display: none;
-}
-
-#globalNavi {
-    margin-top: 10px;
-    padding: 0;
 }
 
 #globalNavi li {
