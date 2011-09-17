@@ -5,6 +5,12 @@ describe 'Visit to top page' do
     visit '/'
   end
 
+  describe 'title' do
+    it 'should have site name' do
+      find('title').should have_content('Sapporo.js')
+    end
+  end
+
   describe '#header' do
     it 'should contain site info'do
       find('#header .siteName').should have_content('Sapporo.js')
