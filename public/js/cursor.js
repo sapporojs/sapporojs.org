@@ -37,8 +37,11 @@ var Cursor = (function($) {
     return cursors[id] = cursors[id] || this.add(id);
   }
   Cursor.remove = function(id) {
-    cursors[id].remove();
-    return delete cursors[id];
+    var cursor = cursors[id];
+    if (cursor) {
+      cursor.remove();
+    }
+    return delete cursor;
   }
 
   return Cursor;
