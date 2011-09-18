@@ -189,9 +189,24 @@ body.mainIndex .topicPath {
 }
 
 #globalNavi li {
+    margin-right:4px;
     list-style: none;
     float: left;
-    width: 80px;
+    display: block;
+    line-height: 1;
+}
+
+#globalNavi a {
+    background: rgba(200,200,200,0.4);
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+#globalNavi a:hover, #globalNavi .current a {
+    background: rgba(255, 190, 64, 0.4);
+    color: #f69966;
 }
 
 div.entry ul.info {
