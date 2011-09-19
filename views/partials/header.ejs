@@ -1,6 +1,6 @@
 <div id="header">
-  <p class="siteName"><a href="/"><%= site.name %></a></p>
-  <p class="description"><%= site.description %></p>
+  <p class="siteName"><a href="/"><%- site.nameHtml %></a></p>
+  <p class="description"><%- site.descriptionHtml %></p>
   <ul id="globalNavi">
     <% for (var i in globalNavi) { %>
       <li
