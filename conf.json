@@ -1,8 +1,10 @@
 {
   "site": {
     "name": "Sapporo.js",
+    "nameHtml": "Sapporo.<span class='title-decoration'>js</span>",
     "href": "/",
     "description": "We like JavaScript.",
+    "descriptionHtml": "We like <span class='title-decoration'>JavaScript.</span>",
     "theme": "sunlight",
     "appleTouchIcon": "/file/tabineko-mini.png",
     "googleAnalitics": "UA-16255135-2",
