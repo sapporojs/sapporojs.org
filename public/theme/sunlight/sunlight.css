@@ -190,20 +190,12 @@ div.entry ul.info li {
     display: inline;
 }
 
-div.entry ul.info .date {
-    float: left;
-    display: block;
-    width: 10em;
-    height: 1em;
-    overflow: hidden;
-}
-
 div.entry ul.info .update {
     display: none;
 }
 
 div.entry ul.info .category {
-    margin-left: -3.8em;
+    margin-left: 0.2em;
     text-transform: uppercase;
     font-weight: bold;
 }
