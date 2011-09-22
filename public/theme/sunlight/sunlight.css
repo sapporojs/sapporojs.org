@@ -391,6 +391,12 @@ p.siteName a:hover {
 .calendar td a:hover {
     background: rgba(255, 190, 64, 0.4);
     color: #f69966;
+    transform: scale(2.0) rotate(720deg);
+    transition: transform 1.2s ease-out;
+    -webkit-transform: scale(2.0) rotate(720deg);
+    -webkit-transition: -webkit-transform 1.2s ease-out;
+    -moz-transform: scale(2.0) rotate(720deg);
+    -moz-transition: -moz-transform 1.2s ease-out;
 }
 
 /* entry textBody */
