@@ -339,6 +339,21 @@ p.siteName a:hover {
 .calendar caption a:hover {
     background: rgba(255, 190, 64, 0.4);
     color: #f69966;
+    transform: scale(1.0);
+    transition: transform 0.2s ease-out;
+    -webkit-transform: scale(1.0);
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -moz-transform: scale(1.0);
+    -moz-transition: -moz-transform 0.2s ease-out;
+}
+
+.calendar caption a:active {
+    transform: scale(1.5);
+    transition: transform 0.0s ease-out;
+    -webkit-transform: scale(1.5);
+    -webkit-transition: -webkit-transform 0.0s ease-out;
+    -moz-transform: scale(1.5);
+    -moz-transition: -moz-transform 0.0s ease-out;
 }
 
 .calendar th.sun {
@@ -391,6 +406,7 @@ p.siteName a:hover {
 .calendar td a:hover {
     background: rgba(255, 190, 64, 0.4);
     color: #f69966;
+    transform: scale(2.0);
     transform: scale(2.0) rotate(720deg);
     transition: transform 1.2s ease-out;
     -webkit-transform: scale(2.0) rotate(720deg);
