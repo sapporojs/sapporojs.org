@@ -54,7 +54,7 @@ div.textBody, dd {
 }
 
 .siteName, .description, h1, h2, #globalNavi {
-    font-family: "Impact", "FreeSans", "Verdana-Bold", sans-serif;
+    font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
     font-weight: normal;
     margin-top: 0.4em;
     margin-bottom: 0;
