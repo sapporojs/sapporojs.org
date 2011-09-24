@@ -21,14 +21,6 @@
       "href": "/",
       "text": "Home",
       "current": true
-    },
-    {
-      "href": "http://qwik.jp/sapporojs/",
-      "text": "qwik"
-    },
-    {
-      "href": "https://github.com/tricknotes/sapporojs-web",
-      "text": "GitHub"
     }
   ],
   "sidebar": {
@@ -36,7 +28,13 @@
     "author": {
       "name": "Sapporo.js",
       "img": "/file/tabineko.png",
-      "links": []
+      "links": [{
+        "href": "http://qwik.jp/sapporojs/",
+        "text": "qwik"
+      }, {
+        "href": "https://github.com/tricknotes/sapporojs-web",
+        "text": "GitHub"
+      }]
     },
     "links": [
       {
