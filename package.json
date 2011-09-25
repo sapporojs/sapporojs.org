@@ -12,7 +12,8 @@
     "node": ">= 0.4.1 < 0.5.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "bundle exec rspec spec"
   },
   "homepage": "http://sapporojs.org/",
   "repository": {
