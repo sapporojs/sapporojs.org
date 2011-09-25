@@ -5,9 +5,6 @@ exports.listen = (args...) ->
         socket.broadcast.emit 'entry cursor'
             id: socket.id
 
-        socket.emit 'info'
-            message: "create new connection"
-
         socket.on 'mouse position', (data) ->
             console.log data
             socket.broadcast.emit 'move cursor'
