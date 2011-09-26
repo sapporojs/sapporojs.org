@@ -16,7 +16,7 @@ describe 'Category link' do
     end
   end
 
-  describe 'access tag#sapporojs without "/" at the end of URL' do
+  describe 'access category#event without "/" at the end of URL' do
     before do
       visit '/category/3'
     end
