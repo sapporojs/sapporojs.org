@@ -9,6 +9,7 @@ describe 'Visit to entry page' do
       last_entry_path = Dir['data/entry/*.json'].sort.last
       entry_hash = JSON.parse(File.read(last_entry_path))
       @entry = OpenStruct.new(entry_hash)
+      # トップページに最新の entry が表示されているため、data から取得している
       click_link @entry.title
     end
 
