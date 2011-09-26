@@ -46,3 +46,15 @@ $ npm install .
 ```sh
 $ node app.js
 ```
+
+## ML
+
+こちらからご登録ください。
+
+* http://qwik.jp/sapporojs/
+
+## How to Collaborate
+
+ML と併せて [Pivotal Tracker]( https://www.pivotaltracker.com ) にもご登録ください。
+
+* https://www.pivotaltracker.com/projects/340997
