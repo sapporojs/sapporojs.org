@@ -5,46 +5,32 @@ http://sapporojs.org
 ## 動作確認環境
 
 * Mac OS X Snow Leopard
-* Node.js 0.4.11
+* Ruby 1.9.2p290
 
 ## セットアップ
 
-1) [Node.js]( http://nodejs.org/ ) をインストールする  
-Mac OS X を利用している場合、 [Homebrew]( http://mxcl.github.com/homebrew/ ) を利用すると手軽にインストールできます。
+1) [jekyll]( http://jekyllrb.com/ ) をインストールする
 
 ```sh
-$ brew install node
+$ gem install jekyll
 ```
 
-2) [npm]( http://npmjs.org/ ) をインストールする
-
-3) ソースコードを取得して配置する
+2) ソースコードを取得して配置する
 
 ```sh
 $ git clone git://github.com/tricknotes/sapporojs-web.git
 ```
 
-4) 関連パッケージをインストールする
+3) gh-pages ブランチに切り替える
 
 ```sh
-$ cd sapporojs-web
-$ npm install .
+$ git checkout gh-pages
 ```
 
-5) conf.json を編集し、管理者名とパスワードを記入する  
-以下のフォーマットで設定してください。
-
-```json
-"admin": {
-  "id": "xxxxx",
-  "pass": "xxxxx"
-}
-```
-
-6) web サーバを起動する
+6) サーバを起動する
 
 ```sh
-$ node app.js
+$ jekyll --server
 ```
 
 ## ML
