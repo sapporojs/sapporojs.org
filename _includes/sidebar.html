@@ -1,0 +1,45 @@
+<dl class="navi">
+  <dt>About</dt>
+  <dd>
+    <p>このページは Sapporo.js の活動について紹介するページです.</p>
+  </dd>
+  <dt>Author</dt>
+  <dd>
+    <p>
+      Sapporo.js<br />
+      <img src="/images/tabineko.png" alt="" />
+    </p>
+  </dd>
+
+  <dt>Recent Entries</dt>
+  <dd>
+    <ul>
+{% for post in site.categories.news limit:5 %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.date | date: "%Y-%m-%d" }}
+      </li>
+{% endfor %}
+    </ul>
+  </dd>
+
+  <dt>Tags</dt>
+  <dd>
+    <ul>
+{% for tag in site.tags %}
+      <li>
+        <a href="/tag/{{ tag[0] }}.html">{{ tag[0] }}</a>
+      </li>
+{% endfor %}
+    </ul>
+  </dd>
+</dl><!--end navi-->
+
+<dl class="others">
+  <dt>Feeds</dt>
+  <dd>
+    <ul class="feed">
+      <li class="atom"><a href="/atom.xml">ATOM</a></li>
+    </ul>
+  </dd>
+</dl><!--end others-->

@@ -1,10 +1,1 @@
-node_modules
-*.swp
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-.elc
-auto-save-list
-tramp
-.\#*
+_site

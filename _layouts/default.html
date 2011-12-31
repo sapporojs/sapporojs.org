@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="mainIndex double">
+    <div id="header">
+      {% include header.html %}
+    </div>
+
+    <div id="content">
+      <div id="main">
+        <h1>Index</h1>
+        {{ content }}
+      </div><!-- end main-->
+
+      <div id="utilities">
+        {% include sidebar.html %}
+      </div>
+
+      <p class="return"><a href="#header">Return to page top</a></p>
+    </div><!--end content-->
+    <div id="footer">
+      {% include footer.html %}
+    </div><!--end footer-->
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    {% include scripts.html %}
+    {% include analytics_tracker.html %}
+  </body>
+</html>
