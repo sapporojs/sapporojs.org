@@ -27,7 +27,7 @@ $ git clone git://github.com/tricknotes/sapporojs-web.git
 $ git checkout gh-pages
 ```
 
-6) サーバを起動する
+4) サーバを起動する
 
 ```sh
 $ jekyll --server
