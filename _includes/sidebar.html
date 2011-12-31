@@ -7,7 +7,7 @@
   <dd>
     <p>
       Sapporo.js<br />
-      <img src="/images/tabineko.png" alt="" />
+      <img src="/sapporojs-web/images/tabineko.png" alt="" />
     </p>
   </dd>
 
@@ -16,7 +16,7 @@
     <ul>
 {% for post in site.categories.news limit:5 %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="/sapporojs-web{{ post.url }}">{{ post.title }}</a>
         {{ post.date | date: "%Y-%m-%d" }}
       </li>
 {% endfor %}
@@ -28,7 +28,7 @@
     <ul>
 {% for tag in site.tags %}
       <li>
-        <a href="/tag/{{ tag[0] }}.html">{{ tag[0] }}</a>
+        <a href="/sapporojs-web/tag/{{ tag[0] }}.html">{{ tag[0] }}</a>
       </li>
 {% endfor %}
     </ul>

@@ -17,7 +17,7 @@
             <li class="date">{{ page.date | date: "%Y-%m-%d" }}</li>
             <li class="tag">
             {% if page.tag %}
-              <a href="/tag/{{ page.tag }}">{{ page.tag }}</a>
+              <a href="/sapporojs-web/tag/{{ page.tag }}">{{ page.tag }}</a>
             {% endif %}
             </li>
           </ul>
@@ -37,7 +37,7 @@
       {% include footer.html %}
     </div><!--end footer-->
 
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/sapporojs-web/js/jquery.min.js"></script>
     {% include scripts.html %}
     {% include analytics_tracker.html %}
   </body>
