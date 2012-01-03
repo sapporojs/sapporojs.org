@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Index
 ---
 {% for post in site.categories.news limit:5 %}
 <div class="section entry">
