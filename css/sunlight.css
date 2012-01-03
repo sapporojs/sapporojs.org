@@ -412,3 +412,61 @@ dl.navi dd:first-of-type {
 div.section {
     clear: both;
 }
+
+ul.updates {
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888;
+  -moz-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888;
+}
+
+ul.updates li {
+  margin: 5px 5px;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+}
+
+ul.updates li .commit-row {
+  white-space: nowrap;
+}
+
+ul.updates li.loading {
+  text-align: center;
+  background-image: url('../images/ajax-loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+ul.updates li.loading img {
+  width: 60px;
+  height: 60px;
+}
+
+ul.updates li img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px 0px 3px;
+  position: auto;
+}
+
+ul.updates li a {
+  font-size: 10px;
+}
+
+ul.updates li time {
+  font-size: 8px;
+  margin: 0px 5px;
+}
+
+ul.updates li .authorship {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.updates li span {
+  display: inline-block;
+  height: 100%;
+}
