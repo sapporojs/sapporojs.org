@@ -3,9 +3,10 @@ jQuery(function($) {
 
   // method definition
   var getUpdates = function(callback) {
-    $.getJSON(
+    $.get(
       'https://api.github.com/repos/'+REPO_NAME+'/commits',
-      callback
+      callback,
+      'jsonp'
     );
   };
 
@@ -34,7 +35,8 @@ jQuery(function($) {
     , '</li>'
   ].join(''));
 
-  var showUpdates = function(data) {
+  var showUpdates = function(res) {
+    var data = res.data;
     var $updateArea = $('ul.updates');
     $updateArea.empty();
     _.times(10, function(i) {
