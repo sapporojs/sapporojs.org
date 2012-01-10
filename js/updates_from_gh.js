@@ -1,5 +1,5 @@
 jQuery(function($) {
-  var REPO_NAME = 'tricknotes/sapporojs-web';
+  var REPO_NAME = 'sapporojs/sapporojs.github.com';
 
   // method definition
   var getUpdates = function(callback) {
