@@ -18,16 +18,10 @@ $ gem install jekyll
 2) ソースコードを取得して配置する
 
 ```sh
-$ git clone git://github.com/tricknotes/sapporojs-web.git
+$ git clone git://github.com/sapporojs/sapporojs.github.com.git
 ```
 
-3) gh-pages ブランチに切り替える
-
-```sh
-$ git checkout gh-pages
-```
-
-4) サーバを起動する
+3) サーバを起動する
 
 ```sh
 $ jekyll --server
