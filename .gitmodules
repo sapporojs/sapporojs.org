@@ -1,3 +1,0 @@
-[submodule "js/lib/jquery-relative-date"]
-	path = js/lib/jquery-relative-date
-	url = git://github.com/dandrinkard/jquery-relative-date.git
