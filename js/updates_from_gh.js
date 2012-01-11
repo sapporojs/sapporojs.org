@@ -1,5 +1,5 @@
 jQuery(function($) {
-  var REPO_NAME = 'sapporojs/sapporojs.github.com';
+  var REPO_NAME = 'sapporojs/sapporojs.org';
   var MAX_MESSAGE_LENGTH = 30;
 
   // method definition

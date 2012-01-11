@@ -18,7 +18,7 @@ $ gem install jekyll
 2) ソースコードを取得して配置する
 
 ```sh
-$ git clone git://github.com/sapporojs/sapporojs.github.com.git
+$ git clone git://github.com/sapporojs/sapporojs.org.git
 ```
 
 3) サーバを起動する
