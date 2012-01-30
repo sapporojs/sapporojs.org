@@ -34,6 +34,48 @@ body {
 #footer {
   width: 940px; }
 
+/* spacing */
+#header {
+  margin-top: 8px; }
+
+#header, #footer, #content p.return {
+  margin-left: 20px; }
+
+div.entry {
+  margin-bottom: 1.5em; }
+
+dl.navi dt, dl.others dt {
+  margin-top: 20px;
+  margin-left: 80px; }
+
+dl.navi dd, dl.others dd {
+  margin-left: 80px; }
+
+#footer {
+  margin: 24px 20px 0 20px;
+  padding-bottom: 20px; }
+
+/* apply background */
+html {
+  background-image: url(img/background.jpg);
+  background-repeat: repeat; }
+
+body {
+  background-image: url(img/board.png);
+  background-repeat: repeat-y;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px; }
+
+body div.entry {
+  padding-top: 10px;
+  background-image: url(img/article_separator.png);
+  background-repeat: no-repeat; }
+
+body.individual div.entry {
+  padding-top: 0;
+  background: none; }
+
 /* font and letter settings */
 body {
   font-family: sans-serif;
@@ -84,27 +126,6 @@ dd ul {
 
 #footer ul {
   margin: 0; }
-
-/* apply background */
-html {
-  background-image: url(img/background.jpg);
-  background-repeat: repeat; }
-
-body {
-  background-image: url(img/board.png);
-  background-repeat: repeat-y;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px; }
-
-body div.entry {
-  padding-top: 10px;
-  background-image: url(img/article_separator.png);
-  background-repeat: no-repeat; }
-
-body.individual div.entry {
-  padding-top: 0;
-  background: none; }
 
 /* apply style */
 body h1 {
@@ -213,27 +234,6 @@ p.return a {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
-
-/* spacing */
-#header {
-  margin-top: 8px; }
-
-#header, #footer, #content p.return {
-  margin-left: 20px; }
-
-div.entry {
-  margin-bottom: 1.5em; }
-
-dl.navi dt, dl.others dt {
-  margin-top: 20px;
-  margin-left: 80px; }
-
-dl.navi dd, dl.others dd {
-  margin-left: 80px; }
-
-#footer {
-  margin: 24px 20px 0 20px;
-  padding-bottom: 20px; }
 
 /* siteName and description */
 p.siteName {
