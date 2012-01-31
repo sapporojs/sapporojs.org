@@ -75,17 +75,17 @@ dl.navi dd, dl.others dd {
 #footer {
   width: 940px;
   margin: 24px 20px 0 20px;
-  padding-bottom: 20px; }
-
-#footer {
+  padding-bottom: 20px;
   font-size: 10px;
   text-align: right; }
-
-#footer a {
-  color: #000011; }
-
-#footer ul {
-  margin: 0; }
+  #footer a {
+    color: #000011; }
+  #footer ul {
+    margin: 0; }
+    #footer ul.support {
+      padding: 0; }
+      #footer ul.support li {
+        display: inline; }
 
 /* apply style */
 body h1 {
@@ -112,12 +112,6 @@ div.entry ul.info li {
 
 div.entry ul.info .update {
   display: none; }
-
-#footer ul.support {
-  padding: 0; }
-
-#footer ul.support li {
-  display: inline; }
 
 p.return {
   padding-top: 20px; }
