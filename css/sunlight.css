@@ -4,6 +4,8 @@ html {
   background-repeat: repeat; }
 
 body {
+  font-family: sans-serif;
+  color: #4b4b4b;
   width: 980px;
   margin: 20px auto;
   background-image: url(img/board.png);
@@ -50,46 +52,6 @@ body {
   width: 300px;
   position: relative; }
 
-dl.navi dt, dl.others dt {
-  margin-top: 20px;
-  margin-left: 80px; }
-
-dl.navi dd, dl.others dd {
-  margin-left: 80px; }
-
-#footer {
-  width: 940px;
-  margin: 24px 20px 0 20px;
-  padding-bottom: 20px; }
-
-/* font and letter settings */
-body {
-  font-family: sans-serif;
-  color: #4b4b4b; }
-
-div.textBody, dd {
-  line-height: 1.8; }
-
-.siteName, .description, h1, h2, #globalNavi {
-  font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
-  font-weight: normal;
-  margin-top: 0.4em;
-  margin-bottom: 0; }
-
-h1, h2 {
-  font-size: 28px; }
-
-a {
-  color: #357ee3;
-  text-decoration: none; }
-
-#globalNavi li.current a,
-a:hover {
-  text-decoration: underline; }
-
-#globalNavi {
-  font-size: 24px; }
-
 dl dt {
   font-size: 16px;
   font-weight: bold;
@@ -102,6 +64,18 @@ dl dd p, dd ul {
 
 dd ul {
   padding-left: 18px; }
+
+dl.navi dt, dl.others dt {
+  margin-top: 20px;
+  margin-left: 80px; }
+
+dl.navi dd, dl.others dd {
+  margin-left: 80px; }
+
+#footer {
+  width: 940px;
+  margin: 24px 20px 0 20px;
+  padding-bottom: 20px; }
 
 #footer {
   font-size: 10px;
@@ -241,6 +215,17 @@ span.title-decoration {
 p.siteName a:hover {
   text-decoration: none; }
 
+.siteName, .description, #globalNavi {
+  font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
+  font-weight: normal;
+  margin-bottom: 0; }
+
+#globalNavi li.current a {
+  text-decoration: underline; }
+
+#globalNavi {
+  font-size: 24px; }
+
 /* about */
 dl.navi {
   margin-top: 0.5em; }
@@ -373,3 +358,22 @@ ul.updates li .authorship {
 ul.updates li span {
   display: inline-block;
   height: 100%; }
+
+div.textBody, dd {
+  line-height: 1.8; }
+
+h1, h2 {
+  font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
+  font-weight: normal;
+  margin-top: 0.4em;
+  margin-bottom: 0; }
+
+h1, h2 {
+  font-size: 28px; }
+
+a {
+  color: #357ee3;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
