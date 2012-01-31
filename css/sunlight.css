@@ -236,32 +236,6 @@ dl.navi dd:first-of-type {
   width: 480px;
   font-size: 108%; }
 
-#flip2 {
-  margin-top: 1.5em;
-  padding-top: 20px;
-  background-image: url(img/article_separator.png);
-  background-repeat: no-repeat; }
-
-#flip2 li {
-  margin: 0 0 0 auto;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.8em;
-  width: 300px;
-  border-bottom: 1px dotted; }
-
-#flip2 .older {
-  float: left;
-  text-align: left; }
-
-#flip2 .newer {
-  float: right;
-  text-align: right; }
-
-#flip2 li a {
-  display: block;
-  font-weight: normal; }
-
 div.section {
   clear: both; }
 
