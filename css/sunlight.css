@@ -209,51 +209,43 @@ dl.navi {
 
 /* entry textBody */
 .textBody {
-  padding-top: 14px; }
-
-.textBody h2 {
-  margin-top: 0.8em;
-  padding: 2px 0 0 4px;
-  font-family: sans-serif;
-  font-size: 123.1%;
-  width: 560px;
-  border-left: 5px solid;
-  border-bottom: 3px dotted; }
-
-.textBody h3 {
-  margin: 0.8em 0 0.1em 0;
-  padding: 2px 0 0 0;
-  font-size: 114%;
-  width: 480px;
-  border-bottom: 2px dotted; }
-
-.textBody h4 {
-  margin: 0.8em 0 0.1em 0;
-  padding: 2px 0 0 0;
-  width: 480px;
-  font-size: 108%; }
+  padding-top: 14px;
+  line-height: 1.8; }
+  .textBody h2 {
+    margin-top: 0.8em;
+    padding: 2px 0 0 4px;
+    font-family: sans-serif;
+    font-size: 123.1%;
+    width: 560px;
+    border-left: 5px solid;
+    border-bottom: 3px dotted; }
+  .textBody h3 {
+    margin: 0.8em 0 0.1em 0;
+    padding: 2px 0 0 0;
+    font-size: 114%;
+    width: 480px;
+    border-bottom: 2px dotted; }
+  .textBody h4 {
+    margin: 0.8em 0 0.1em 0;
+    padding: 2px 0 0 0;
+    width: 480px;
+    font-size: 108%; }
 
 div.section {
   clear: both; }
-
-div.textBody, dd {
-  line-height: 1.8; }
 
 h1, h2 {
   font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
   font-weight: normal;
   margin-top: 0.4em;
-  margin-bottom: 0; }
-
-h1, h2 {
+  margin-bottom: 0;
   font-size: 28px; }
 
 a {
   color: #357ee3;
   text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
+  a:hover {
+    text-decoration: underline; }
 
 /* site updates information from repository */
 ul.updates {
