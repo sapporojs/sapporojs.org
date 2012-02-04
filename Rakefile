@@ -11,5 +11,5 @@ file 'css' => [
 rule '.css' => [
   proc {|name| name.sub(/^css/, '_sass').sub(/\.css/, '.sass')}
 ] do |t|
-  sh "sass #{t.source} #{t.name}"
+  sh 'sass', t.source, t.name
 end
