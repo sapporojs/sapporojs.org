@@ -4,48 +4,51 @@ p.siteName
   font-size: 72px
   display: inline
 
+  a
+    color: #5e5e5e
+
+  a:hover
+    text-decoration: none
+
 p.description
   margin-left: 0.3em
   font-size: 24px
   display: inline
 
-p.siteName a, p.description a
-  color: #5e5e5e
+  a
+    color: #5e5e5e
 
+// to decorate texts "js" and "javascript"
 span.title-decoration
   color: #357ee3
 
-p.siteName a:hover
-  text-decoration: none
 
 .siteName, .description, #globalNavi
   font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif
   font-weight: normal
   margin-bottom: 0
 
-#globalNavi li.current a
-  text-decoration: underline
-
+// globalNavi is navigations under siteName
 #globalNavi
   font-size: 24px
   margin-top: 0px
   padding: 0
 
-#globalNavi li
-  margin-right: 4px
-  list-style: none
-  float: left
-  display: block
-  line-height: 1
+  li
+    margin-right: 4px
+    list-style: none
+    float: left
+    display: block
+    line-height: 1
 
-#globalNavi a
-  background: rgba(200,200,200,0.4)
-  display: block
-  border-radius: 10px
-  text-align: center
-  padding: 0 0.5em
+  a
+    background: rgba(200,200,200,0.4)
+    display: block
+    border-radius: 10px
+    text-align: center
+    padding: 0 0.5em
 
-#globalNavi a:hover, #globalNavi .current a
-  background: rgba(255, 190, 64, 0.4)
-  color: #f69966
-
+  a:hover, .current a
+    background: rgba(255, 190, 64, 0.4)
+    color: #f69966
+    text-decoration: underline
