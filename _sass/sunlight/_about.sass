@@ -2,29 +2,34 @@
 dl.navi
   margin-top: 0.5em
 
-dl.navi dt:first-of-type:before
-  width: 0px
-  height: 0px
-  content: ""
-  position: absolute
-  border-left: 20px solid transparent
-  border-top: 16px solid #ffffff
-  transform: translate(-39px, 0)
-  -webkit-transform: translate(-39px, 0)
-  -moz-transform: translate(-39px, 0)
+  // タイトル部分は絶対位置指定で dd に被せる
+  dt:first-of-type
+    padding-top: 8px
+    position: absolute
+    z-index: 1
 
-dl.navi dt:first-of-type
-  padding-top: 8px
-  position: absolute
-  z-index: 1
+    // 吹き出しの三角部分を追加
+    &:before
+      width: 0px
+      height: 0px
+      content: ""
+      position: absolute
+      // border で三角形部分を作成
+      border-left: 20px solid transparent
+      border-top: 16px solid #ffffff
+      // transform で表示位置を調整
+      transform: translate(-39px, 0)
+      -webkit-transform: translate(-39px, 0)
+      -moz-transform: translate(-39px, 0)
 
-dl.navi dd:first-of-type
-  margin-left: 60px
-  padding: 52px 20px 16px 20px
-  width: 240px
-  background: #ffffff
-  border-radius: 20px
-  box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
-  -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
-  -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
+  dd:first-of-type
+    margin-left: 60px
+    padding: 52px 20px 16px 20px
+    width: 240px
+    // 吹き出しの背景部分の指定
+    background: #ffffff
+    border-radius: 20px
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
+    -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
+    -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
 
