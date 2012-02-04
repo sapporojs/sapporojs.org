@@ -2,6 +2,7 @@ desc "Build generation required files."
 task :default => 'css'
 
 directory 'css'
+desc "Generate css from sass"
 file 'css' => [
   'css/sunlight.css',
 ]
