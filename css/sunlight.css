@@ -87,10 +87,9 @@ dl.navi dd, dl.others dd {
       #footer ul.support li {
         display: inline; }
 
-/* apply style */
+/* apply styles for main form, except individual blog entry */
 body h1 {
   display: none; }
-
 body.individual h1 {
   display: block;
   margin: 0;
@@ -98,7 +97,6 @@ body.individual h1 {
   padding-top: 20px;
   background-image: url(img/article_separator.png);
   background-repeat: no-repeat; }
-
 body.individual div.entry p {
   margin: 0.1em 0 0.1em 0;
   width: 120%; }
@@ -106,28 +104,25 @@ body.individual div.entry p {
 div.entry ul.info {
   padding: 0;
   margin: 0; }
-
-div.entry ul.info li {
-  display: inline; }
-
-div.entry ul.info .update {
-  display: none; }
+  div.entry ul.info li {
+    display: inline; }
+  div.entry ul.info .update {
+    display: none; }
 
 p.return {
   padding-top: 20px; }
-
-p.return a {
-  display: block;
-  text-align: center;
-  line-height: 1.5em;
-  margin-right: 20px;
-  width: 940px;
-  height: 2em;
-  padding-top: 4px;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
+  p.return a {
+    display: block;
+    text-align: center;
+    line-height: 1.5em;
+    margin-right: 20px;
+    width: 940px;
+    height: 2em;
+    padding-top: 4px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
 
 /* header part, including siteName, description and globalNavi */
 p.siteName {

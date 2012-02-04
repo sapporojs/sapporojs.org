@@ -1,41 +1,44 @@
-/* apply style */
-body h1
-  display: none
+/* apply styles for main form, except individual blog entry */
+body
+  // entry title show as h1 in individual entry page, otherwise h2
+  h1
+    display: none
 
-body.individual h1
-  display: block
-  margin: 0
-  clear: both
-  padding-top: 20px
-  background-image: url(img/article_separator.png)
-  background-repeat: no-repeat
+  &.individual h1
+    display: block
+    margin: 0
+    clear: both
+    padding-top: 20px
+    background-image: url(img/article_separator.png)
+    background-repeat: no-repeat
 
-body.individual div.entry p
-  margin: 0.1em 0 0.1em 0
-  width: 120%
+  &.individual div.entry p
+    margin: 0.1em 0 0.1em 0
+    width: 120%
 
-div.entry ul.info
-  padding: 0
-  margin: 0
+div.entry
+  ul.info
+    padding: 0
+    margin: 0
 
-div.entry ul.info li
-  display: inline
+    li
+      display: inline
 
-div.entry ul.info .update
-  display: none
+    .update
+      display: none
 
 p.return
   padding-top: 20px
 
-p.return a
-  display: block
-  text-align: center
-  line-height: 1.5em
-  margin-right: 20px
-  width: 940px
-  height: 2em
-  padding-top: 4px
-  background: rgba(255, 255, 255, 0.6)
-  border-radius: 10px
-  -moz-border-radius: 10px
-  -webkit-border-radius: 10px
+  a
+    display: block
+    text-align: center
+    line-height: 1.5em
+    margin-right: 20px
+    width: 940px
+    height: 2em
+    padding-top: 4px
+    background: rgba(255, 255, 255, 0.6)
+    border-radius: 10px
+    -moz-border-radius: 10px
+    -webkit-border-radius: 10px
