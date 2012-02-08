@@ -97,9 +97,6 @@ body.individual h1 {
   padding-top: 20px;
   background-image: url(img/article_separator.png);
   background-repeat: no-repeat; }
-body.individual div.entry p {
-  margin: 0.1em 0 0.1em 0;
-  width: 120%; }
 
 div.entry ul.info {
   padding: 0;
