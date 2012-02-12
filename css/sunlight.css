@@ -128,8 +128,7 @@ p.siteName {
   font-size: 72px;
   display: inline; }
   p.siteName a {
-    color: #5e5e5e; }
-  p.siteName a:hover {
+    color: #5e5e5e;
     text-decoration: none; }
 
 p.description {
