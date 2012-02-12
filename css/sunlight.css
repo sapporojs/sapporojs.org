@@ -103,8 +103,6 @@ div.entry ul.info {
   margin: 0; }
   div.entry ul.info li {
     display: inline; }
-  div.entry ul.info .update {
-    display: none; }
 
 p.return {
   padding-top: 20px; }
@@ -217,9 +215,6 @@ dl.navi {
     padding: 2px 0 0 0;
     width: 480px;
     font-size: 108%; }
-
-div.section {
-  clear: both; }
 
 h1, h2 {
   font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif;
