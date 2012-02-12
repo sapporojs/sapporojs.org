@@ -135,9 +135,8 @@ p.siteName {
 p.description {
   margin-left: 0.3em;
   font-size: 24px;
-  display: inline; }
-  p.description a {
-    color: #5e5e5e; }
+  display: inline;
+  color: #5e5e5e; }
 
 span.title-decoration {
   color: #357ee3; }
