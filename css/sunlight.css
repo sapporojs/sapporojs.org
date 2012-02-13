@@ -165,6 +165,13 @@ span.title-decoration {
     background: rgba(255, 190, 64, 0.4);
     color: #f69966;
     text-decoration: underline; }
+  #globalNavi:after {
+    clear: both;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 /* about */
 dl.navi {
