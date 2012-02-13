@@ -195,8 +195,8 @@ dl.navi {
       border-left: 20px solid transparent;
       border-top: 16px solid white;
       transform: translate(-39px, 0);
-      -webkit-transform: translate(-39px, 0);
-      -moz-transform: translate(-39px, 0); }
+      -moz-transform: translate(-39px, 0);
+      -webkit-transform: translate(-39px, 0); }
   dl.navi dd:first-of-type {
     margin-left: 60px;
     padding: 52px 20px 16px 20px;
