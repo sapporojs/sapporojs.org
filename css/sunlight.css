@@ -206,8 +206,8 @@ dl.navi {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+    -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
 
 /* entry textBody */
 .textBody {
@@ -253,8 +253,9 @@ ul.updates {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  -webkit-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888;
-  -moz-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888; }
+  box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888;
+  -moz-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888;
+  -webkit-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888; }
   ul.updates li {
     margin: 5px 5px;
     list-style: none;

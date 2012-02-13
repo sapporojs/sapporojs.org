@@ -3,8 +3,8 @@ ul.updates
   margin: 0px
   background-color: rgba(255, 255, 255, 0.6)
   @include border-radius(10px)
-  -webkit-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888
-  -moz-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888
+  // inner arc represents list element. it enables multiple arguments.
+  @include box-shadow((0 3px 10px #dedede, 0 1px 5px #888))
 
   li
     margin: 5px 5px
