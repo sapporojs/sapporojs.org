@@ -1,19 +1,18 @@
 @charset "utf-8"
 // mixin must define before use
+@mixin vender-prefix($style, $values)
+  #{$style}: $values
+  #{-moz- + $style}: $values
+  #{-webkit- + $style}: $values
+
 @mixin border-radius($size)
-  border-radius: $size
-  -moz-border-radius: $size
-  -webkit-border-radius: $size
+  @include vender-prefix(border-radius, $size)
 
 @mixin box-shadow($values)
-  box-shadow: $values
-  -moz-box-shadow: $values
-  -webkit-box-shadow: $values
+  @include vender-prefix(box-shadow, $values)
 
 @mixin transform($values)
-  transform: $values
-  -moz-transform: $values
-  -webkit-transform: $values
+  @include vender-prefix(transform, $values)
 
 @import "sunlight/frame"
 @import "sunlight/mainform"
