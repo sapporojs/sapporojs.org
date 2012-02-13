@@ -164,6 +164,8 @@ span.title-decoration {
     background: rgba(200, 200, 200, 0.4);
     display: block;
     border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     text-align: center;
     padding: 0 0.5em; }
   #globalNavi a:hover, #globalNavi .current a {
@@ -201,6 +203,8 @@ dl.navi {
     width: 240px;
     background: white;
     border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
@@ -246,8 +250,9 @@ a {
 ul.updates {
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.6);
-  -webkit-border-radius: 10px;
+  border-radius: 10px;
   -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   -webkit-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888;
   -moz-box-shadow: 0 3px 10px #dedede, 0 1px 5px #888888; }
   ul.updates li {

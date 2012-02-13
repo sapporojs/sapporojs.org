@@ -1,4 +1,10 @@
 @charset "utf-8"
+// mixin must define before use
+@mixin border-radius($size)
+  border-radius: $size
+  -moz-border-radius: $size
+  -webkit-border-radius: $size
+
 @import "sunlight/frame"
 @import "sunlight/mainform"
 @import "sunlight/header"
