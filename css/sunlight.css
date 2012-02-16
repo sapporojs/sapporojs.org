@@ -54,19 +54,16 @@ body {
   margin: 0 20px 0 740px;
   width: 220px;
   position: relative; }
-
-dl dt {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-dl dd p, dd ul {
-  margin-top: 0px;
-  font-size: 14px;
-  line-height: 1.4; }
-
-dd ul {
-  padding-left: 18px; }
+  #utilities dt {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #utilities p, #utilities ul {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.4; }
+  #utilities ul {
+    padding-left: 18px; }
 
 dl.navi dt, dl.others dt {
   margin-top: 20px; }
