@@ -18,9 +18,7 @@ dl.navi
       border-left: 20px solid transparent
       border-top: 16px solid #ffffff
       // adjustment triangle
-      transform: translate(-39px, 0)
-      -webkit-transform: translate(-39px, 0)
-      -moz-transform: translate(-39px, 0)
+      @include transform(translate(-39px, 0))
 
   // this element has background for balloon
   dd:first-of-type
@@ -28,7 +26,5 @@ dl.navi
     padding: 52px 20px 16px 20px
     width: 240px
     background: #ffffff
-    border-radius: 20px
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
-    -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
-    -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.3)
+    @include border-radius(20px)
+    @include box-shadow(4px 4px 8px rgba(0,0,0,0.3))
