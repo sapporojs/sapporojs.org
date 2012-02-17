@@ -1,3 +1,6 @@
+dd {
+  margin: 0; }
+
 /* applying basic page frame, 2 column-format, background and spacing */
 html {
   background-image: url(img/background.jpg);
@@ -48,29 +51,20 @@ body {
   float: left; }
 
 #utilities {
-  margin: 0 20px 0 660px;
-  width: 300px;
+  margin: 0 20px 0 740px;
+  width: 220px;
   position: relative; }
-
-dl dt {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-dl dd p, dd ul {
-  margin-top: 0px;
-  font-size: 14px;
-  line-height: 1.4; }
-
-dd ul {
-  padding-left: 18px; }
-
-dl.navi dt, dl.others dt {
-  margin-top: 20px;
-  margin-left: 80px; }
-
-dl.navi dd, dl.others dd {
-  margin-left: 80px; }
+  #utilities dt {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #utilities p, #utilities ul {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.4; }
+  #utilities ul {
+    padding-left: 18px; }
 
 dl.navi dd:nth-of-type(2) img {
   border-radius: 20px;
@@ -198,7 +192,7 @@ dl.navi {
       -moz-transform: translate(-39px, 0);
       -webkit-transform: translate(-39px, 0); }
   dl.navi dd:first-of-type {
-    margin-left: 60px;
+    margin-left: -20px;
     padding: 52px 20px 16px 20px;
     width: 240px;
     background: white;

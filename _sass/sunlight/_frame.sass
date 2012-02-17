@@ -1,3 +1,7 @@
+// reset default stylesheet
+dd
+  margin: 0
+
 /* applying basic page frame, 2 column-format, background and spacing */
 html
   background-image: url(img/background.jpg)
@@ -49,29 +53,23 @@ body
   float: left
 
 #utilities
-  margin: 0 20px 0 660px
-  width: 300px
+  margin: 0 20px 0 740px
+  width: 220px
   position: relative
 
-dl dt
-  font-size: 16px
-  font-weight: bold
-  text-transform: uppercase
+  dt
+    margin-top: 20px
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
 
-dl dd p, dd ul
-  margin-top: 0px
-  font-size: 14px
-  line-height: 1.4
+  p, ul
+    margin-top: 0px
+    font-size: 14px
+    line-height: 1.4
 
-dd ul
-  padding-left: 18px
-
-dl.navi dt, dl.others dt
-  margin-top: 20px
-  margin-left: 80px
-
-dl.navi dd, dl.others dd
-  margin-left: 80px
+  ul
+    padding-left: 18px
 
 // select author part
 // this selector is not supported under IE8
