@@ -7,3 +7,14 @@
 <link rel="stylesheet" href="/css/common.css" />
 <link rel="alternate" type="application/rss+xml" title="title" href="/rss.xml" />
 <link rel="apple-touch-icon" href="/images/tabineko-mini.png" />
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}">
+{% else %}
+<meta property="og:title" content="{{ site.title }}">
+{% endif %}
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content=ja"" />
+<meta property="og:url" content="{{ site.base_url }}{{ page.url }}" />
+<meta property="og:image" content="{{ site.base_url}}/images/tabineko-mini.png" />
+<meta property="og:description" content="We like JavaScript. このページは Sapporo.js の活動について紹介するページです." />
