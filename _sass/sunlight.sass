@@ -1,4 +1,17 @@
 @charset "utf-8"
+
+$font-color: #4b4b4b
+$title-color: #5e5e5e
+$accent-color: #357ee3 // kind of light blue
+$background-for-accent-color: rgba(200, 200, 200, 0.4)
+// key-color is theme color
+$key-color: #f69966 // kind of orange
+$background-for-key-color: rgba(255, 190, 64, 0.4)
+// base-color1 mainly used for hatching
+$base-color1: rgba(255, 255, 255, 0.6)
+// base-color2 mainly used for ruled line
+$base-color2: $font-color
+
 // mixin must define before use
 @mixin vender-prefix($style, $values)
   #{$style}: $values
