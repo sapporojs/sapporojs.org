@@ -8,18 +8,18 @@ p.siteName
   display: inline
 
   a
-    color: #5e5e5e
+    color: $title-color
     text-decoration: none
 
 p.description
   margin-left: 0.3em
   font-size: 24px
   display: inline
-  color: #5e5e5e
+  color: $title-color
 
 // to decorate texts "js" and "javascript"
 span.title-decoration
-  color: #357ee3
+  color: $accent-color
 
 .siteName, .description, #globalNavi
   font-family: "Impact", "FreeSans", "Arial-BoldMT", sans-serif
@@ -40,15 +40,15 @@ span.title-decoration
     line-height: 1
 
   a
-    background: rgba(200,200,200,0.4)
+    background: $background-for-accent-color
     display: block
     @include border-radius(10px)
     text-align: center
     padding: 0 0.5em
 
   a:hover, .current a
-    background: rgba(255, 190, 64, 0.4)
-    color: #f69966
+    background: $background-for-key-color
+    color: $key-color
     text-decoration: underline
 
   // standard pattern for clear fix with pseudo class

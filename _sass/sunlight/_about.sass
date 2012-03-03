@@ -16,7 +16,7 @@ dl.navi
       position: absolute
       // border makes triangle
       border-left: 20px solid transparent
-      border-top: 16px solid #ffffff
+      border-top: 16px solid opacify($base-color1, 1)
       // adjustment triangle
       @include transform(translate(-39px, 0))
 
@@ -27,6 +27,6 @@ dl.navi
     margin-left: -20px
     padding: 52px 20px 16px 20px
     width: 240px
-    background: #ffffff
+    background: opacify($base-color1, 1)
     @include border-radius(20px)
     @include box-shadow(4px 4px 8px rgba(0,0,0,0.3))
