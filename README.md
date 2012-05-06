@@ -4,8 +4,8 @@ http://sapporojs.org
 
 ## 動作確認環境
 
-* Mac OS X Snow Leopard
-* Ruby 1.9.2p290
+* Mac OS X Lion
+* Ruby 1.9.3p194
 
 ## セットアップ
 
