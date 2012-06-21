@@ -1,7 +1,11 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN" />
 <meta name="viewport" content="width=device-width" />
-<meta name="description" content="We like JavaScript. このページは Sapporo.js の活動について紹介するページです." />
+{% if page.title %}
+<meta name="description" content="{{ page.title }}" />
+{% else %}
+<meta name="description" content="{{ site.description }}" />
+{% endif %}
 <title>Sapporo.js{% if page.title %} | {{ page.title }}{% endif %}</title>
 <link rel="icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/css/sunlight.css" />
@@ -18,4 +22,8 @@
 <meta property="og:locale" content="ja" />
 <meta property="og:url" content="{{ site.base_url }}{{ page.url }}" />
 <meta property="og:image" content="{{ site.base_url}}/images/tabineko.png" />
-<meta property="og:description" content="We like JavaScript. このページは Sapporo.js の活動について紹介するページです." />
+{% if page.title %}
+<meta property="og:description" content="{{ page.title }}" />
+{% else %}
+<meta property="og:description" content="{{ site.description }}" />
+{% endif %}
