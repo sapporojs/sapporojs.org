@@ -5,7 +5,7 @@ layout: nil
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Sapporo.js</title>
-    <link>{{ site.base_url }}{{ page.url }}</link>
+    <link>{{ site.base_url }}{{ page.url | remove:'/index.html' }}</link>
     <language>ja</language>
     <ttl>40</ttl>
     <description>Sapporo.jsのニュースの更新情報</description>
