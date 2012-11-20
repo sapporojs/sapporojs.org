@@ -22,6 +22,14 @@ ul.updates
       .commit-info
         margin-left: 34px
 
+        > a
+          // On chrome, `text-overflow` effects only immediate children texts.
+          display: block          // `text-overflow` effects only `block`
+          padding-top: 4px        // instead of line-heigt, make block heigher
+          padding-bottom: 2px     // instead of line-heigt, make block heigher
+          overflow: hidden
+          text-overflow: ellipsis // replace overflowed letters with "..."
+
     img
       width: 20px
       height: 20px

@@ -262,6 +262,12 @@ ul.updates {
         bottom: 0; }
       ul.updates li .commit-row .commit-info {
         margin-left: 34px; }
+        ul.updates li .commit-row .commit-info > a {
+          display: block;
+          padding-top: 4px;
+          padding-bottom: 2px;
+          overflow: hidden;
+          text-overflow: ellipsis; }
     ul.updates li img {
       width: 20px;
       height: 20px;
