@@ -255,7 +255,13 @@ ul.updates {
     list-style: none;
     border-bottom: 1px solid #eeeeee; }
     ul.updates li .commit-row {
+      position: relative;
       white-space: nowrap; }
+      ul.updates li .commit-row .author-icon {
+        position: absolute;
+        bottom: 0; }
+      ul.updates li .commit-row .commit-info {
+        margin-left: 34px; }
     ul.updates li img {
       width: 20px;
       height: 20px;
@@ -270,8 +276,7 @@ ul.updates {
       margin: 0px;
       padding: 0px; }
     ul.updates li span {
-      display: inline-block;
-      height: 100%; }
+      display: block; }
   ul.updates li.loading {
     text-align: center;
     background-image: url("../images/ajax-loader.gif");

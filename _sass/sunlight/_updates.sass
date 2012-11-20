@@ -12,7 +12,15 @@ ul.updates
     border-bottom: 1px solid #eee
 
     .commit-row
+      position: relative
       white-space: nowrap
+
+      .author-icon
+        position: absolute
+        bottom: 0
+
+      .commit-info
+        margin-left: 34px
 
     img
       width: 20px
@@ -32,8 +40,7 @@ ul.updates
       padding: 0px
 
     span
-      display: inline-block
-      height: 100%
+      display: block
 
   li.loading
     text-align: center
