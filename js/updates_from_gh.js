@@ -1,6 +1,5 @@
 jQuery(function($) {
   var REPO_NAME = 'sapporojs/sapporojs.org';
-  var MAX_MESSAGE_LENGTH = 30;
 
   // method definition
   var getUpdates = function(callback) {
@@ -21,11 +20,7 @@ jQuery(function($) {
     ,     '</span>'
     ,     '<span class="commit-info">'
     ,       '<a href="https://github.com/'+REPO_NAME+'/commit/<%- sha %>" target="_blank">'
-    ,         '<% if (commit.message.length < '+MAX_MESSAGE_LENGTH+') { %>'
-    ,            '<%- commit.message %>'
-    ,         '<% } else { %>'
-    ,            '<%- commit.message.split("").splice(0, '+MAX_MESSAGE_LENGTH+').join("") %>...'
-    ,         '<% } %>'
+    ,         '<%- commit.message %>'
     ,       '</a>'
     ,       '<div class="authorship">'
     ,         '<a href="https://github.com/<%- author.login %>" target="_blank">'
