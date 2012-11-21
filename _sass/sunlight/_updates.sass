@@ -12,7 +12,23 @@ ul.updates
     border-bottom: 1px solid #eee
 
     .commit-row
+      position: relative
       white-space: nowrap
+
+      .author-icon
+        position: absolute
+        bottom: 0
+
+      .commit-info
+        margin-left: 34px
+
+        > a
+          // On chrome, `text-overflow` effects only immediate children texts.
+          display: block          // `text-overflow` effects only `block`
+          padding-top: 4px        // instead of line-heigt, make block heigher
+          padding-bottom: 2px     // instead of line-heigt, make block heigher
+          overflow: hidden
+          text-overflow: ellipsis // replace overflowed letters with "..."
 
     img
       width: 20px
@@ -32,8 +48,7 @@ ul.updates
       padding: 0px
 
     span
-      display: inline-block
-      height: 100%
+      display: block
 
   li.loading
     text-align: center
