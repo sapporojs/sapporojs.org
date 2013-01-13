@@ -9,16 +9,19 @@ http://sapporojs.org
 
 ## セットアップ
 
-1) [jekyll]( http://jekyllrb.com/ ) をインストールする
-
-```sh
-$ gem install jekyll
-```
-
-2) ソースコードを取得して配置する
+1) ソースコードを取得して配置する
 
 ```sh
 $ git clone git://github.com/sapporojs/sapporojs.org.git
+$ cd sapporojs.org
+```
+
+2) 必要な gem をインストールする
+
+[Bundler](http://gembundler.com/) を利用してインストールします。
+
+```sh
+$ bunlde install
 ```
 
 3) サーバを起動する
@@ -35,6 +38,6 @@ $ jekyll --server
 
 ## How to Collaborate
 
-ML と併せて [Pivotal Tracker]( https://www.pivotaltracker.com ) にもご登録ください。
+ML と併せて [Pivotal Tracker](https://www.pivotaltracker.com) にもご登録ください。
 
 * https://www.pivotaltracker.com/projects/340997
