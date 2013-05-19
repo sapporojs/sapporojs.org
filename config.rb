@@ -13,3 +13,7 @@ end
 activate :blog do |blog|
   blog.prefix = 'news'
 end
+
+data.tags.each do |tag|
+  proxy "/tag/#{tag}", 'tag.html', locals: {tag: tag}
+end

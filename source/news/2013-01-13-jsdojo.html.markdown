@@ -1,6 +1,6 @@
 ---
 title: JavaScript 道場を開催します
-tag: event
+tags: event
 ---
 ## JavaScript 道場
 

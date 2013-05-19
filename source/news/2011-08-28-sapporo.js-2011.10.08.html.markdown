@@ -1,6 +1,6 @@
 ---
 title: Sapporo.js-2011.10.08 を開催します
-tag: sapporojs
+tags: sapporojs
 ---
 ## [Sapporo.js-2011.10.08](http://atnd.org/events/19368)
 

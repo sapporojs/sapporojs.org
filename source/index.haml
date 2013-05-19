@@ -5,6 +5,11 @@
       %time
         = article.date.strftime('%b %e %Y')
 
+    - article.tags.each do |tag|
+      = link_to tag, "/tag/#{tag}" # TODO Use `tag_path(tag)`
+
     = article.summary
 
     = link_to 'More', article.url
+
+= link_to 'Archives...', '/news'

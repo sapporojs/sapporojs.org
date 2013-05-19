@@ -1,6 +1,6 @@
 ---
 title: Ruby Sapporo Night vol. 14 『Ruby札幌 × Sapporo.js』
-tag: event
+tags: event
 ---
 ## Ruby Sapporo Night vol. 14 『Ruby札幌 × Sapporo.js』
 

@@ -1,6 +1,6 @@
 ---
 title: Sapporo.js-2010.03.31 を開催します
-tag: sapporojs
+tags: sapporojs
 ---
 ## Sapporo.js-2012.03.31
 

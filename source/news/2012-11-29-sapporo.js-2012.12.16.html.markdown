@@ -1,6 +1,6 @@
 ---
 title: Sapporo.js-2012.12.16 を開催します
-tag: sapporojs
+tags: sapporojs
 ---
 ## Sapporo.js-2012.12.16
 

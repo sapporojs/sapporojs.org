@@ -1,0 +1,4 @@
+%ul
+  - blog.articles.select {|article| article.tags.include?(tag) }.each do |article|
+    %li
+      = link_to article.title, article.url
