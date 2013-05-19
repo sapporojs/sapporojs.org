@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-gem 'jekyll'
-gem 'rdiscount'
+ruby '2.0.0'
+
+gem 'middleman', '~> 3.1.0.rc.1'
+gem 'middleman-blog'
+
+gem 'nokogiri'

@@ -1,0 +1,10 @@
+- blog.articles[0...5].each do |article|
+  %article
+    %h1
+      = link_to article.title, article.url
+      %time
+        = article.date.strftime('%b %e %Y')
+
+    = article.summary
+
+    = link_to 'More', article.url

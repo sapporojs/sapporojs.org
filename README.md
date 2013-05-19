@@ -5,7 +5,7 @@ http://sapporojs.org
 ## 動作確認環境
 
 * Mac OS X Lion
-* Ruby 1.9.3p194
+* Ruby 2.0.0
 
 ## セットアップ
 
@@ -27,7 +27,7 @@ $ bunlde install
 3) サーバを起動する
 
 ```sh
-$ jekyll --server
+$ bundle exec middleman server
 ```
 
 ## ML
