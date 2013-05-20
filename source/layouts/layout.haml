@@ -3,13 +3,21 @@
 %html
   %head
     %meta(charset='utf-8')
+    %meta(name='description' content='We like JavaScript. From Sapporo, Japan.')
+
+    %meta(property='og:title' content='Sapporo.js')
+    %meta(property='og:site_name' content='Sapporo.js')
+    %meta(property='og:type' content='website')
+    %meta(property='og:url' content='http://sapporojs.org')
+    -# %meta(property='og:image' content="")
+    %meta(property='og:description' content='We like JavaScript. From Sapporo, Japan.')
   %body
     %header
       %h1
-        Sapporo.js
+        = link_to 'Sapporo.js', '/'
 
     #content
       = yield
 
     %footer
-      Copyright © Sapporo.js All Rights Reserved.
+      Copyright © #{link_to 'Sapporo.js', '/'} All Rights Reserved.
