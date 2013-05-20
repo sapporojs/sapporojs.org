@@ -7,3 +7,5 @@ gem 'middleman-blog'
 
 gem 'nokogiri'
 gem 'builder'
+
+gem 'vendorer'
