@@ -18,8 +18,29 @@
       %h1
         = link_to 'Sapporo.js', '/'
 
+      %nav
+        %ul
+          %li= link_to 'About', '#about'
+          %li= link_to 'Archive', '/news'
+          %li= link_to 'RSS', '/rss.xml'
+
     #content
       = yield
 
     %footer
-      Copyright © #{link_to 'Sapporo.js', '/'} All Rights Reserved.
+      %h2#about About
+      :markdown
+        Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
+
+        ML の登録は [こちら](http://qwik.jp/sapporojs/) からお願いします。
+
+      %h2#github GitHub
+      :markdown
+        [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
+
+      %h2#members Members
+      -# TODO
+
+      %h2#copyright Copyright
+      :markdown
+        Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
