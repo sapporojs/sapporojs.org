@@ -12,16 +12,7 @@ Sapporojs.SearchView = Ember.View.extend({
       return false;
     }
 
-    var result = Sapporojs.Blog.findAll().filter(function(blog) {
-      var title = blog.get('title');
-      var text = blog.get('text');
-
-      return title.match(query) || text.match(query);
-    });
-
     var controller = this.get('controller');
-
-    controller.set('content', result);
     controller.set('showModal', true);
 
     return false;
@@ -30,10 +21,7 @@ Sapporojs.SearchView = Ember.View.extend({
 
 Sapporojs.SearchTextFieldView = Ember.TextField.extend({
   name: 'query',
-
-  input: function() {
-    this.get('controller').set('query', this.$().val());
-  }
+  valueBinding: 'controller.query'
 });
 
 Sapporojs.SearchResultView = Ember.View.extend({
