@@ -5,12 +5,14 @@ Sapporojs.searchResultController = Ember.ArrayController.extend({
 
   content: Ember.computed(function() {
     var query = this.get('query');
+    var escaped = String(query).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    var queryRegExp = new RegExp(escaped, 'i');
 
     var result = Sapporojs.Blog.findAll().filter(function(blog) {
       var title = blog.get('title');
       var text = blog.get('text');
 
-      return title.match(query) || text.match(query);
+      return title.match(queryRegExp) || text.match(queryRegExp);
     });
     return result;
   }).property('query')
