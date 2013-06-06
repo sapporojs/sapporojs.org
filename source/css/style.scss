@@ -35,15 +35,12 @@ footer {
 }
 
 #footer-middle {
-  float: left;
+  @extend #footer-left;
   margin-left: 2.5em;
-  width: 15em;
 }
 
 #footer-right {
-  float: left;
-  margin-left: 2.5em;
-  width: 15em;
+  @extend #footer-middle;
 }
 
 #copyright {
