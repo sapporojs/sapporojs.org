@@ -14,33 +14,40 @@
 
     = stylesheet_link_tag 'style'
   %body
-    %header
-      %h1
-        = link_to 'Sapporo.js', '/'
+    #container
 
-      %nav
-        %ul
-          %li= link_to 'About', '#about'
-          %li= link_to 'Archive', '/news'
-          %li= link_to 'RSS', '/rss.xml'
+      %header
+        %nav
+          %ul
+            %li= link_to 'About', '#about'
+            %li= link_to 'Archive', '/news'
+            %li= link_to 'RSS', '/rss.xml'
 
-    #content
-      = yield
+        %h1
+          = link_to 'Sapporo.js', '/'
 
-    %footer
-      %h2#about About
-      :markdown
-        Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
+      #content
+        = yield
 
-        ML の登録は [こちら](http://qwik.jp/sapporojs/) からお願いします。
+      %footer
+        #footer-left
+          %h2#about About
+          :markdown
+            Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
 
-      %h2#github GitHub
-      :markdown
-        [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
+        #footer-middle
+          %h2#members Members
+          -# TODO
 
-      %h2#members Members
-      -# TODO
+        #footer-right
+          %h2#github GitHub
+          :markdown
+            [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
 
-      %h2#copyright Copyright
-      :markdown
-        Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
+          %h2#mailing-list ML
+          :markdown
+            [sapporojs - Qwik](http://qwik.jp/sapporojs/)
+
+        #copyright
+          :markdown
+            Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
