@@ -1,0 +1,15 @@
+Ember.TEMPLATES['search_result'] = Ember.Handlebars.compile([
+  '<div id="modal-container">',
+    '<h2>Search Result</h2>',
+    '{{#if controller.length}}',
+      '<ul>',
+        '{{#each controller}}',
+          '<li><a {{bindAttr href=url}}>{{title}}</a></li>',
+        '{{/each}}',
+      '</ul>',
+    '{{else}}',
+      'Not Found',
+    '{{/if}}',
+  '</div>',
+  '{{view Sapporojs.ModalBgView controllerBinding="controller"}}',
+].join(''));
