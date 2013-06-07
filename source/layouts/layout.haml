@@ -14,45 +14,45 @@
 
     = stylesheet_link_tag 'style'
   %body
-    #container
+    #wrapper
+      #container
+        %header
+          %nav
+            %ul
+              %li= link_to 'About', '#about'
+              %li= link_to 'Archive', '/news'
+              %li= link_to 'RSS', '/rss.xml'
 
-      %header
-        %nav
-          %ul
-            %li= link_to 'About', '#about'
-            %li= link_to 'Archive', '/news'
-            %li= link_to 'RSS', '/rss.xml'
+          %h1
+            = link_to 'Sapporo.js', '/'
 
-        %h1
-          = link_to 'Sapporo.js', '/'
+          #search-application
 
-        #search-application
+        #content
+          = yield
 
-      #content
-        = yield
+      %footer
+        #footer-container
+          #footer-left
+            %h2#about About
+            :markdown
+              Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
 
-    %footer
-      #footer-container
-        #footer-left
-          %h2#about About
-          :markdown
-            Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
+          #footer-middle
+            %h2#members Members
+            -# TODO
 
-        #footer-middle
-          %h2#members Members
-          -# TODO
+          #footer-right
+            %h2#github GitHub
+            :markdown
+              [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
 
-        #footer-right
-          %h2#github GitHub
-          :markdown
-            [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
+            %h2#mailing-list ML
+            :markdown
+              [sapporojs - Qwik](http://qwik.jp/sapporojs/)
 
-          %h2#mailing-list ML
-          :markdown
-            [sapporojs - Qwik](http://qwik.jp/sapporojs/)
-
-        #copyright
-          :markdown
-            Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
+          #copyright
+            :markdown
+              Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
 
     = javascript_include_tag 'sapporo.js'
