@@ -1,6 +1,7 @@
 ---
 title: JavaScript 道場を開催します
 tags: event
+layout: news_layout
 ---
 ## JavaScript 道場
 

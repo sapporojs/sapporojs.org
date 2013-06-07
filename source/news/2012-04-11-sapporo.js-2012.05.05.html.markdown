@@ -1,6 +1,7 @@
 ---
 title: Sapporo.js-2012.05.05 を開催します
 tags: sapporojs
+layout: news_layout
 ---
 ## Sapporo.js-2012.05.05
 

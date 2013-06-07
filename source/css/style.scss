@@ -2,14 +2,38 @@
 //
 //= require ./search
 
+$base-color: #ba2621;
+$text-color: #000;
+$inverted-text-color: #afafaf;
+
+$background-color: #292929;
+
+$padding-scale: 0.25em;
+
+$content-width: 40em;
+
+body {
+  border-top: $padding-scale * 1.5 solid $base-color;
+}
+
+a {
+  color: $base-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
 #container {
   margin: 0 auto;
   padding: 0;
-  width: 50em;
+  width: $content-width;
 }
 
 header {
-  margin: 0.75em 0 3.75em;
+  margin: $padding-scale * 12 0 $padding-scale * 30 0;
   padding: 0;
 }
 
@@ -20,28 +44,51 @@ nav {
 
     li {
       display: inline-block;
-      margin: 0 0.25em;
+      margin: 0 $padding-scale;
     }
   }
 }
 
-#content {
-  .blog {
-    time {
-      float: right;
-    }
+.blog {
+  padding-bottom: $padding-scale * 20;
+  border-bottom: 1px dotted;
+
+  time {
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
   }
 }
 
 footer {
+  background-color: $background-color;
+  border-top: $padding-scale * 1.5 solid $base-color;
+  float: left;
+  width: 100%;
+  color: $inverted-text-color;
+  margin-top: $padding-scale * 12;
+
   h2 {
     border-bottom: 1px solid;
   }
+
+  a:hover {
+    color: $inverted-text-color;
+  }
 }
+
+#footer-container {
+  margin: 0 auto;
+  width: $content-width;
+}
+
+$footer-margin: $content-width / 20;
+$footer-width: $content-width / 10 * 3;
 
 @mixin footer-content {
   float: left;
-  width: 15em;
+  width: $footer-width;
 }
 
 #footer-left {
@@ -50,14 +97,16 @@ footer {
 
 #footer-middle {
   @include footer-content;
-  margin-left: 2.5em;
+  margin-left: $footer-margin;
 }
 
 #footer-right {
   @include footer-content;
-  margin-left: 2.5em;
+  margin-left: $footer-margin;
 }
 
 #copyright {
   text-align: right;
+  font-size: 11px;
+  font-style: italic;
 }

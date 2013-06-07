@@ -1,5 +1,6 @@
 ---
 title: webサイト公開しました
+layout: news_layout
 ---
 Sapporo.js の web サイトを公開しました！
 

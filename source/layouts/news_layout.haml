@@ -1,0 +1,6 @@
+- wrap_layout :layout do
+  %article.blog
+    = yield
+
+    %time
+      = current_article.date.strftime('%b %e %Y')

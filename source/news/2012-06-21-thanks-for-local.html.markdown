@@ -1,5 +1,6 @@
 ---
 title: 2012年度Local感謝賞をいただきました
+layout: news_layout
 ---
 ## 2012年度LOCAL感謝賞をいただきました
 
