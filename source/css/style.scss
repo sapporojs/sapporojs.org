@@ -85,6 +85,21 @@ footer {
   }
 }
 
+#member-icons {
+  padding-left:0px;
+
+  img {
+    padding: 2px;
+    margin: 1px;
+    background-color: $inverted-text-color;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+
 #footer-container {
   margin: 0 auto;
   width: $content-width;

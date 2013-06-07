@@ -40,7 +40,12 @@
 
           #footer-middle
             %h2#members Members
-            -# TODO
+            %ul#member-icons
+              - data.members.each do |member|
+                %li
+                  - name = member.name
+                  = link_to member.link, title: name do
+                    = image_tag "http://www.gravatar.com/avatar/#{member.gravatar}?s=24", width: 24, height: 24, alt: name, title: name
 
           #footer-right
             %h2#github GitHub
