@@ -1,4 +1,11 @@
-Sapporojs.Blog = Ember.Object.extend({});
+Sapporojs.Blog = Ember.Object.extend({
+  isMatchedWith: function(query) {
+    var title = this.get('title');
+    var text = this.get('text');
+
+    return title.match(query) || text.match(query);
+  }
+});
 
 Sapporojs.Blog.reopenClass({
   _content: Ember.A(),

@@ -9,10 +9,7 @@ Sapporojs.searchResultController = Ember.ArrayController.extend({
     var queryRegExp = new RegExp(escaped, 'i');
 
     var result = Sapporojs.Blog.all().filter(function(blog) {
-      var title = blog.get('title');
-      var text = blog.get('text');
-
-      return title.match(queryRegExp) || text.match(queryRegExp);
+      return blog.isMatchedWith(queryRegExp);
     });
     return result;
   }).property('query')
