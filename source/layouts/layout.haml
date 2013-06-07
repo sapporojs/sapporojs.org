@@ -3,14 +3,14 @@
 %html
   %head
     %meta(charset='utf-8')
-    %meta(name='description' content='We like JavaScript. From Sapporo, Japan.')
+    %meta{name: 'description', content: data.information.description}
 
-    %meta(property='og:title' content='Sapporo.js')
-    %meta(property='og:site_name' content='Sapporo.js')
-    %meta(property='og:type' content='website')
-    %meta(property='og:url' content='http://sapporojs.org')
-    -# %meta(property='og:image' content="")
-    %meta(property='og:description' content='We like JavaScript. From Sapporo, Japan.')
+    %meta{property: 'og:title', content: data.information.name}
+    %meta{property: 'og:site_name', content: data.information.name}
+    %meta{property: 'og:type', content: 'website'}
+    %meta{property: 'og:url', content: data.information.url}
+    -# %meta{property: 'og:image', content: ''}
+    %meta{property: 'og:description', content: data.information.description}
 
     = stylesheet_link_tag 'style'
   %body
@@ -24,7 +24,7 @@
               %li= link_to 'RSS', '/rss.xml'
 
           %h1
-            = link_to 'Sapporo.js', '/'
+            = link_to data.information.name, '/'
 
           #search-application
 
@@ -36,7 +36,7 @@
           #footer-left
             %h2#about About
             :markdown
-              Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
+              #{data.information.about}
 
           #footer-middle
             %h2#members Members
@@ -50,14 +50,14 @@
           #footer-right
             %h2#github GitHub
             :markdown
-              [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
+              #{data.information.github}
 
             %h2#mailing-list ML
             :markdown
-              [sapporojs - Qwik](http://qwik.jp/sapporojs/)
+              #{data.information.ml}
 
           #copyright
             :markdown
-              Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
+              #{data.information.copyright}
 
     = javascript_include_tag 'sapporo.js'

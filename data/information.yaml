@@ -1,0 +1,13 @@
+---
+url: http://sapporojs.org/
+name: Sapporo.js
+description: We like JavaScript. From Sapporo, Japan.
+about: |-
+  Sapporo.js は札幌で JavaScript が好きなひとが集まるコミュニティです。
+  JavaScript に興味がある方であれば、どなたでもご参加いただけます。
+github: |-
+  [sapporojs/sapporojs.org](https://github.com/sapporojs/sapporojs.org)
+ml: |-
+  [sapporojs - Qwik](http://qwik.jp/sapporojs/)
+copyright: |-
+  Copyright &copy; [Sapporo.js](http://sapporojs.org) All Rights Reserved.
