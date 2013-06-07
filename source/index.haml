@@ -1,9 +1,9 @@
 - blog.articles[0...5].each do |article|
-  %article
+  %article.blog
     %h1
       = link_to article.title, article.url
-      %time
-        = article.date.strftime('%b %e %Y')
+    %time
+      = article.date.strftime('%b %e %Y')
 
     - article.tags.each do |tag|
       = link_to tag, "/tag/#{tag}" # TODO Use `tag_path(tag)`
@@ -11,5 +11,3 @@
     = article.summary
 
     = link_to 'More', article.url
-
-= link_to 'Archive', '/news'

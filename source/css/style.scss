@@ -26,6 +26,11 @@ nav {
 }
 
 #content {
+  .blog {
+    time {
+      float: right;
+    }
+  }
 }
 
 footer {
@@ -34,18 +39,23 @@ footer {
   }
 }
 
-#footer-left {
+@mixin footer-content {
   float: left;
   width: 15em;
 }
 
+#footer-left {
+  @include footer-content;
+}
+
 #footer-middle {
-  @extend #footer-left;
+  @include footer-content;
   margin-left: 2.5em;
 }
 
 #footer-right {
-  @extend #footer-middle;
+  @include footer-content;
+  margin-left: 2.5em;
 }
 
 #copyright {
