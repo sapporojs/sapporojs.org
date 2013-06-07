@@ -8,7 +8,7 @@ Sapporojs.searchResultController = Ember.ArrayController.extend({
     var escaped = String(query).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     var queryRegExp = new RegExp(escaped, 'i');
 
-    var result = Sapporojs.Blog.findAll().filter(function(blog) {
+    var result = Sapporojs.Blog.all().filter(function(blog) {
       var title = blog.get('title');
       var text = blog.get('text');
 

@@ -5,25 +5,18 @@ Sapporojs.Blog.reopenClass({
 
   _loaded: false,
 
-  findAll: function() {
+  load: function(json) {
     var content = Sapporojs.Blog._content;
+    var forEach = Ember.ArrayPolyfills.forEach;
 
-    if (Sapporojs.Blog._loaded) {
-      return content;
-    }
-    Sapporojs.Blog._loaded = true;
+    forEach.call(json, function(blogData) {
+      var blog = Sapporojs.Blog.create(blogData);
 
-    Ember.$.get('/api/blogs.json').then(function(json) {
-      var forEach = Ember.ArrayPolyfills.forEach;
-
-      forEach.call(json, function(blogData) {
-        var blog = Sapporojs.Blog.create(blogData);
-
-        content.pushObject(blog);
-      });
+      content.pushObject(blog);
     });
+  },
 
-    return content;
+  all: function() {
+    return this._content;
   }
 });
-Sapporojs.Blog.findAll(); // eager load...

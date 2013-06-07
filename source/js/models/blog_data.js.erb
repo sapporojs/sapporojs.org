@@ -1,3 +1,5 @@
+//=require ./blog
+
 <%
   article_data = blog.articles.map {|article|
     {
@@ -13,4 +15,6 @@
     }
   }
 %>
-<%= article_data.to_json %>
+
+Sapporojs.Blog.load(<%= article_data.to_json %>);
+
