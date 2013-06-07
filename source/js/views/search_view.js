@@ -1,9 +1,5 @@
-//=require ../controllers/seach_result_controller
-
 Sapporojs.SearchView = Ember.View.extend({
   tagName: 'form',
-
-  controller: Sapporojs.searchResultController,
 
   submit: function(e) {
     var query = this.get('controller.query');
@@ -28,8 +24,6 @@ Sapporojs.SearchResultView = Ember.View.extend({
   elementId: 'search-result',
   templateName: 'search_result',
 
-  controller: Sapporojs.searchResultController,
-
   updateModal: function() {
     if (this.get('controller.showModal')) {
       this.$().fadeIn();
@@ -42,9 +36,6 @@ Sapporojs.SearchResultView = Ember.View.extend({
     this.updateModal();
   }, 'controller.showModal'),
 });
-
-// Sapporojs.ModalView = Ember.View.extend({
-// });
 
 Sapporojs.ModalBgView = Ember.View.extend({
   elementId: 'modal-background',
