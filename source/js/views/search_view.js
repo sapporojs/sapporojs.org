@@ -1,4 +1,5 @@
 Sapporojs.SearchView = Ember.View.extend({
+  elementId: 'search-form',
   tagName: 'form',
 
   submit: function(e) {
@@ -17,6 +18,7 @@ Sapporojs.SearchView = Ember.View.extend({
 
 Sapporojs.SearchTextFieldView = Ember.TextField.extend({
   name: 'query',
+  classNames: ['search-textfield'],
   valueBinding: 'controller.query'
 });
 
