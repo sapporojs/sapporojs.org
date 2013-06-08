@@ -92,6 +92,13 @@ nav {
   }
 }
 
+.archive {
+  li {
+    margin-bottom: $padding-scale;
+    margin-right: $padding-scale * 4;
+  }
+}
+
 footer {
   background-color: $background-color;
   border-top: $padding-scale * 1.5 solid $base-color;
