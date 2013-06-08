@@ -133,3 +133,9 @@ $footer-width: $content-width / 10 * 3;
   font-size: 11px;
   font-style: italic;
 }
+
+.unsupported-browser-warning {
+  margin: 0;
+  padding: 20px 50px 20px 50px;
+  background-color: #eedd82;
+}

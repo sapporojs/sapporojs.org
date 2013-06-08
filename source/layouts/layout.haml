@@ -14,6 +14,8 @@
 
     = stylesheet_link_tag 'style'
   %body
+    /[if lte IE 8]
+      = partial 'unsupported_browser_warning'
     #wrapper
       #container
         %header
