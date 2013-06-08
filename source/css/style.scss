@@ -74,6 +74,15 @@ nav {
   padding-bottom: $padding-scale * 20;
   border-bottom: 1px dotted;
 
+  .tags {
+    list-style-type: none;
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+  }
+
   time {
     float: right;
     font-size: 11px;
