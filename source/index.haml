@@ -2,15 +2,4 @@
   %article.blog
     %h1
       = link_to article.title, article.url
-
-    - if tags = article.tags.presence
-      %ul.tags
-        - tags.each do |tag|
-          %li= link_to tag, "/tag/#{tag}"
-
-    = article.summary
-
-    %time
-      = article.date.strftime('%b %e %Y')
-
-    = link_to 'More', article.url
+    = partial 'blog', locals: {article: article}

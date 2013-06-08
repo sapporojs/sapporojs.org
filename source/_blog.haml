@@ -1,0 +1,9 @@
+- if tags = article.tags.presence
+  %ul.tags
+    - tags.each do |tag|
+      %li= link_to tag, "/tag/#{tag}"
+
+= article.body
+
+%time
+  = article.date.strftime('%b %e %Y')

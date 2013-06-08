@@ -1,6 +1,4 @@
 - wrap_layout :layout do
   %article.blog
-    = yield
-
-    %time
-      = current_article.date.strftime('%b %e %Y')
+    %h1= current_article.title
+    = partial 'blog', locals: {article: current_article}
