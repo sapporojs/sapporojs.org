@@ -8,6 +8,8 @@ $inverted-text-color: #afafaf;
 
 $background-color: #292929;
 
+$base-font-size: 0.9em;
+
 $padding-scale: 0.25em;
 
 $content-width: 40em;
@@ -16,6 +18,7 @@ body {
   border-top: $padding-scale * 1.5 solid $base-color;
   background-color: $background-color * 5;
   background-image: image-url('vendor/wall-paper.jpg');
+  font-size: $base-font-size;
 }
 
 #wrapper {
@@ -101,17 +104,28 @@ footer {
   }
 }
 
+$footer-content-width: $content-width * 1.2;
+
 #footer-container {
   margin: 0 auto;
-  width: $content-width;
+  width: $footer-content-width;
+
+  h2 {
+    font-size: $base-font-size * 1.3;
+  }
+
+  .description {
+    font-size: $base-font-size * 0.9;
+  }
 }
 
-$footer-margin: $content-width / 20;
-$footer-width: $content-width / 10 * 3;
+$footer-margin: $footer-content-width / 20;
+$footer-width: $footer-content-width / 10 * 3;
 
 @mixin footer-content {
   float: left;
   width: $footer-width;
+  padding-bottom: 20px;
 }
 
 #footer-left {

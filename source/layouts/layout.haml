@@ -37,8 +37,9 @@
         #footer-container
           #footer-left
             %h2#about About
-            :markdown
-              #{data.information.about}
+            .description
+              :markdown
+                #{data.information.about}
 
           #footer-middle
             %h2#members Members
@@ -51,12 +52,14 @@
 
           #footer-right
             %h2#github GitHub
-            :markdown
-              #{data.information.github}
+            .description
+              :markdown
+                #{data.information.github}
 
             %h2#mailing-list ML
-            :markdown
-              #{data.information.ml}
+            .description
+              :markdown
+                #{data.information.ml}
 
           #copyright
             :markdown
