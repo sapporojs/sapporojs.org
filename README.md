@@ -38,6 +38,4 @@ $ bundle exec middleman server
 
 ## How to Collaborate
 
-ML と併せて [Pivotal Tracker](https://www.pivotaltracker.com) にもご登録ください。
-
-* https://www.pivotaltracker.com/projects/340997
+Pull Requests and issues are always welcome :-)
