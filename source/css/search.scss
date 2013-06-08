@@ -1,5 +1,26 @@
 @import './config';
 
+@mixin shadow($scale, $shading) {
+  $bright: #eee;
+  $dark:   #999;
+  $box-shadow: 0 $scale $scale * 2 $bright * $shading, 0 $scale / 2 $scale * 2 $dark * $shading;
+
+  -webkit-box-shadow: $box-shadow;
+  box-shadow:         $box-shadow;
+  -webkit-transition-property: -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: default;
+  -moz-transition-property: box-shadow;
+  -moz-transition-duration: 0.5s;
+  -moz-transition-timing-function: default;
+}
+
+@mixin radius($scale) {
+  -webkit-border-radius: $scale;
+  -moz-border-radius: $scale;
+  border-radius: $scale;
+}
+
 #search-form {
   float: right;
 }
@@ -46,9 +67,8 @@ $modal-width: 950px;
   z-index: 99999;
   outline: none;
   overflow: scroll;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  @include shadow(3px, 0.4);
+  @include radius(2px);
 }
 
 #modal-container {
