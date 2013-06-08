@@ -2,9 +2,11 @@
   float: right;
 }
 
+$modal-width: 950px;
+
 #search-result {
   display: none;
-  margin-left: -475px;
+  margin-left: -$modal-width / 2;
   z-index: 99999;
   outline: none;
   position: fixed;
@@ -15,10 +17,10 @@
 #modal-container {
   background: #fff;
   left: 50%;
-  width: 950px;
+  width: $modal-width;
+  max-height: 550px;
   min-height: 350px;
-  max-height: 50px;
-  margin-left: -475px;
+  margin-left: -$modal-width / 2;
   z-index: 99999;
   outline: none;
   position: fixed;
