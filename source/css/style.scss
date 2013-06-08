@@ -15,6 +15,7 @@ $padding-scale: 0.25em;
 $content-width: 40em;
 
 body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   border-top: $padding-scale * 1.5 solid $base-color;
   background-color: $background-color * 5;
   background-image: image-url('vendor/wall-paper.jpg');
