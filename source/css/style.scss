@@ -21,10 +21,8 @@ body {
   font-size: $base-font-size;
 }
 
-#wrapper {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  position: absolute;
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -37,6 +35,12 @@ a {
   }
 }
 
+#wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  position: absolute;
+}
+
 #container {
   margin: 0 auto;
   padding: 0;
@@ -46,6 +50,11 @@ a {
 header {
   margin: $padding-scale * 12 0 $padding-scale * 30 0;
   padding: 0;
+
+  h1 {
+    font-size: $base-font-size * 3.2;
+    margin-bottom: 10px;
+  }
 }
 
 nav {
@@ -54,8 +63,9 @@ nav {
     list-style: none;
 
     li {
+      font-size: $base-font-size * 1.2;
       display: inline-block;
-      margin: 0 $padding-scale;
+      margin: 0 $padding-scale * 2;
     }
   }
 }
@@ -111,7 +121,7 @@ $footer-content-width: $content-width * 1.2;
   width: $footer-content-width;
 
   h2 {
-    font-size: $base-font-size * 1.3;
+    font-size: $base-font-size * 1.5;
   }
 
   .description {
