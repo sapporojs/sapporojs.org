@@ -1,4 +1,8 @@
-MASTER_REPOSITORY = 'git@github.com:sapporojs/sapporojs.org.git'
+MASTER_REPOSITORY = if ENV['GH_TOKEN']
+    "https://#{ENV['GH_TOKEN']}@github.com/sapporojs/sapporojs.org"
+  else
+    'git@github.com:sapporojs/sapporojs.org.git'
+  end
 PUBLISH_BRANCH = 'gh-pages'
 
 def initialize_repository(repository, branch)
@@ -54,6 +58,6 @@ task :publish do
   Dir.chdir 'build' do
     sh 'git add -A'
     sh "git commit -m 'Update with #{sha1}'"
-    sh "git push origin #{PUBLISH_BRANCH}"
+    sh "git push #{MASTER_REPOSITORY} #{PUBLISH_BRANCH}"
   end
 end

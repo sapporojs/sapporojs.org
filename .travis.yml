@@ -1,3 +1,28 @@
 language: ruby
 rvm: 2.0.0
 script: bundle exec middleman build
+after_success:
+  - bash -c '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec rake publish'
+
+env:
+  global:
+    - secure: |-
+        PHbQtg+kvmw/IOGvwwH7IK+R0PX2k62m4T4SGsTaTL50fLgHZbG9GTJ6rn9h
+        tTVoKf6aBg2MMY6ffRVhiUYI9X6BdhaXY5CyXndnTozASxriRhrZoeX+31to
+        Oyc9oe70O0ROKovHirnxXoYwbPy90VlTmwFpH+/djWa8EDbn7Jw=
+    - secure: |-
+        UoBRLTGs6aydk4jHitA48BQnhZ8r1Gb77JKitMUgJAZ3HjgpllqhpyB0CP23
+        OoXHgywjQ0Jmn3dbXC7V59YwOWgfo87K/FuRUhGXm5/8G3YXPGlDBxV7XTD4
+        n1Q2OIOTZAfIdrT0R1b3GGscyqJCXDcmdbbv46I/SjxYYTzo07I=
+    - secure: |-
+        biv21AnivzW1Kde0+ae9SZ1ykQWNeZ9ek1uZomK+YEEqojNybCKCzgoGn5Sf
+        l4sZG+uQ//aYlf+vQSQBi1KsOPBOk2d5XMWXRZ6aWXGqlGg5nX6u8BYDkMTJ
+        hCIpzmNPlvzH2w53hi1dXcTEsmJ3lixaeRC9p1yq0Yx6YqA/zfc=
+    - secure: |-
+        E3vGDCIZgK+Cl8LTV21m3ZtEOzGtUOlSv6OFUMeOJyHI6uX5XtEaCKLX0Wba
+        c2hQyZMIDcktUs9ou6uXSH+vs6mvQxIQr2gC7NQMfqR11V5V7+aTME5q7uZ4
+        +Tt2cySe6KUDb2U0HyTNmzDd5WG3CoBFbpdgin5aoTyTFHGeXHE=
+    - secure: |-
+        fNmdiG50AgwqkiQ5u1jdqSOnMZJLUzV4wUKuTWBQysevqaxgg1RaIvaO6q9+
+        ZMg6qO8Oc3TqxLniSfGOJuzD94cQrYqyYnkhliyBvZtEYZusoO9rVmVicNf4
+        NHG3tum5uslAYGVRFJ8yqwdm+XLDAXJnNflBiA3sU2Lj1zatkzo=
