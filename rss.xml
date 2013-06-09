@@ -9,7 +9,7 @@
     <name>Sapporo.js</name>
   </author>
   <entry>
-    <title>Web サイトをリニューアルのお知らせ</title>
+    <title>Web サイトリニューアルのお知らせ</title>
     <link rel="alternate" href="/news/2013/06/09/site-renewal.html"/>
     <id>/news/2013/06/09/site-renewal.html</id>
     <published>2013-06-09T00:00:00Z</published>
@@ -20,20 +20,29 @@
     <summary type="html">&lt;p&gt;&lt;a href="http://emberjs.com"&gt;Ember.js&lt;/a&gt; と &lt;a href="http://middlemanapp.com"&gt;Middleman&lt;/a&gt; を使って本 Web サイトをリニューアルいたしました。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://github.com/sapporojs/sapporojs.org"&gt;sapporojs/sapporojs.org - GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;a href="http://github.com/sapporojs/sapporojs.org"&gt;sapporojs/sapporojs.org - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参りますので、ご参照くだされば幸いです。&lt;/p&gt;
 
-&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参ります。&lt;/p&gt;
-
-&lt;p&gt;これからもどうぞよろしくお願いいたします:-)&lt;/p&gt;
-</summary>
+&lt;p&gt;また &lt;a href="http://sapporojs.org/#members"&gt;Members&lt;/a&gt; にアイコンを掲載してくださる方を募集しております。
+Sapporo.js に興味のあるかたであれば、どなたでも大歓迎です。
+Pull Request や ML, Twitter などでお知らせください...&lt;/p&gt;</summary>
     <content type="html">&lt;p&gt;&lt;a href="http://emberjs.com"&gt;Ember.js&lt;/a&gt; と &lt;a href="http://middlemanapp.com"&gt;Middleman&lt;/a&gt; を使って本 Web サイトをリニューアルいたしました。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="http://github.com/sapporojs/sapporojs.org"&gt;sapporojs/sapporojs.org - GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参ります。&lt;/p&gt;
+&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参りますので、ご参照くだされば幸いです。&lt;/p&gt;
+
+&lt;p&gt;また &lt;a href="http://sapporojs.org/#members"&gt;Members&lt;/a&gt; にアイコンを掲載してくださる方を募集しております。
+Sapporo.js に興味のあるかたであれば、どなたでも大歓迎です。
+Pull Request や ML, Twitter などでお知らせください。&lt;/p&gt;
+
+&lt;p&gt;必要事項はこちらをご参考ください:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/sapporojs/sapporojs.org/blob/master/data/members.yml"&gt;members.yml&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;これからもどうぞよろしくお願いいたします:-)&lt;/p&gt;
 </content>
