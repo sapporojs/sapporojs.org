@@ -1,30 +1,26 @@
-# Web site for Sapporo.js
+# The website for Sapporo.js
 
 http://sapporojs.org
 
-## 動作確認環境
+## Environments
 
 * Mac OS X Lion
 * Ruby 2.0.0
 
-## セットアップ
-
-1) ソースコードを取得して配置する
+## Setup
 
 ```sh
 $ git clone git://github.com/sapporojs/sapporojs.org.git
 $ cd sapporojs.org
 ```
 
-2) 必要な gem をインストールする
-
-[Bundler](http://gembundler.com/) を利用してインストールします。
+Using [Bundler](http://gembundler.com/).
 
 ```sh
 $ bunlde install
 ```
 
-3) サーバを起動する
+## Boot
 
 ```sh
 $ bundle exec middleman server
@@ -32,7 +28,7 @@ $ bundle exec middleman server
 
 ## ML
 
-こちらからご登録ください。
+Here:
 
 * http://qwik.jp/sapporojs/
 
