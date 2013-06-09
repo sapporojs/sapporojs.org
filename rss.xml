@@ -1,22 +1,335 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Sapporo.js</title>
-    <link>{{ site.base_url }}{{ page.url | remove:'/index.html' }}</link>
-    <language>ja</language>
-    <ttl>40</ttl>
-    <description>Sapporo.jsのニュースの更新情報</description>
-    {% for post in site.categories.news limit:10 %}
-        <item>
-          <title>{{ post.title }}</title>
-          <description>{{ post.content | xml_escape }}</description>
-          <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-          <guid>{{ site.base_url }}{{ post.url }}</guid>
-          <link>{{ site.base_url }}{{ post.url }}</link>
-        </item>
-    {% endfor %}
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sapporo.js</title>
+  <id>http://sapporojs.org/</id>
+  <link href="http://sapporojs.org/"/>
+  <link href="http://sapporojs.org/" rel="self"/>
+  <updated>2013-06-09T00:00:00Z</updated>
+  <author>
+    <name>Sapporo.js</name>
+  </author>
+  <entry>
+    <title>Web サイトをリニューアルのお知らせ</title>
+    <link rel="alternate" href="/news/2013/06/09/site-renewal.html"/>
+    <id>/news/2013/06/09/site-renewal.html</id>
+    <published>2013-06-09T00:00:00Z</published>
+    <updated>2013-06-09T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;a href="http://emberjs.com"&gt;Ember.js&lt;/a&gt; と &lt;a href="http://middlemanapp.com"&gt;Middleman&lt;/a&gt; を使って本 Web サイトをリニューアルいたしました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://github.com/sapporojs/sapporojs.org"&gt;sapporojs/sapporojs.org - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参ります。&lt;/p&gt;
+
+&lt;p&gt;これからもどうぞよろしくお願いいたします:-)&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;&lt;a href="http://emberjs.com"&gt;Ember.js&lt;/a&gt; と &lt;a href="http://middlemanapp.com"&gt;Middleman&lt;/a&gt; を使って本 Web サイトをリニューアルいたしました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://github.com/sapporojs/sapporojs.org"&gt;sapporojs/sapporojs.org - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引き続き、Sapporo.js に関する情報はこちらに掲載して参ります。&lt;/p&gt;
+
+&lt;p&gt;これからもどうぞよろしくお願いいたします:-)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sapporo.js-2013.05.19 を開催します</title>
+    <link rel="alternate" href="/news/2013/05/17/sapporo.js-2013-05-19.html"/>
+    <id>/news/2013/05/17/sapporo.js-2013-05-19.html</id>
+    <published>2013-05-17T00:00:00Z</published>
+    <updated>2013-05-17T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="sapporojs-20130519"&gt;Sapporo.js-2013.05.19&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/2331/"&gt;Sapporo.js-2013.05.19&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;p&gt;内容&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ひとこと自己紹介&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めながら写経してきます。
+興味ある方はぜひぜひご参加ください:-)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一般発表&lt;/p&gt;
+
+    &lt;ul&gt;&lt;li&gt;Getting Started with Ember.js - &lt;a href="https://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    <content type="html">&lt;h2 id="sapporojs-20130519"&gt;Sapporo.js-2013.05.19&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/2331/"&gt;Sapporo.js-2013.05.19&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;p&gt;内容&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ひとこと自己紹介&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めながら写経してきます。
+興味ある方はぜひぜひご参加ください:-)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一般発表&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Getting Started with Ember.js - &lt;a href="https://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Concurrent Programming in JavaScript  - &lt;a href="https://twitter.com/y_jono"&gt;@y_jono&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また、Sapporo.js では、一般発表をしてくださる方を積極的に募集しています。&lt;/p&gt;
+
+&lt;p&gt;研究/勉強の成果を発表してみたい方や、作ったアプリを自慢したい方など、我こそは！と思う方はこの機会に発表してみませんか!?&lt;/p&gt;
+
+&lt;p&gt;概要を添えて、 &lt;a href="http://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt; までtwitterでお知らせください。&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;場所&lt;/h3&gt;
+
+&lt;p&gt;札幌市東区民センター講義室 (札幌市東区 北11条東7丁目1-1)&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;時間&lt;/h3&gt;
+
+&lt;p&gt;2013.05.19 13:00〜16:30&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;参加登録&lt;/h3&gt;
+
+&lt;p&gt;こちらからご登録ください: &lt;a href="http://connpass.com/event/2331/"&gt;Sapporo.js-2013.05.19&lt;/a&gt; (connpass)&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;その他&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;参加費： 200円くらい&lt;/li&gt;
+  &lt;li&gt;wifiなし&lt;/li&gt;
+  &lt;li&gt;電源あり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;興味ある方はぜひぜひご参加ください:-)&lt;/p&gt;
+
+&lt;p&gt;初めてでも気軽にご参加いただける内容となっております。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>JavaScript 道場を開催します</title>
+    <link rel="alternate" href="/news/2013/01/13/jsdojo.html"/>
+    <id>/news/2013/01/13/jsdojo.html</id>
+    <published>2013-01-13T00:00:00Z</published>
+    <updated>2013-01-13T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="javascript-"&gt;JavaScript 道場&lt;/h2&gt;
+
+&lt;p&gt;みなさんは JavaScript を書いていて困ること、 難しいと感じることはないでしょうか。 それは JavaScript の言語自体が抱える複雑性であったり、 様々な環境で動作するが故の複雑性であったり、 他にも様々な要因が考えられます。&lt;/p&gt;
+
+&lt;p&gt;一人だと行き詰ってしまうような問題でも、 みんなで話し合うことで解決のヒントが見えてくるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;みなさんが普段困っているような問題を持ち寄って、 一緒にコードを書きながら考えることができる実践の「場」として...&lt;/p&gt;</summary>
+    <content type="html">&lt;h2 id="javascript-"&gt;JavaScript 道場&lt;/h2&gt;
+
+&lt;p&gt;みなさんは JavaScript を書いていて困ること、 難しいと感じることはないでしょうか。 それは JavaScript の言語自体が抱える複雑性であったり、 様々な環境で動作するが故の複雑性であったり、 他にも様々な要因が考えられます。&lt;/p&gt;
+
+&lt;p&gt;一人だと行き詰ってしまうような問題でも、 みんなで話し合うことで解決のヒントが見えてくるかもしれません。&lt;/p&gt;
+
+&lt;p&gt;みなさんが普段困っているような問題を持ち寄って、 一緒にコードを書きながら考えることができる実践の「場」として、 「JavaScript 道場」を開催いたします。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/sapporojs/jsdojo/wiki/prospectus"&gt;開催趣意書&lt;/a&gt; より&lt;/p&gt;
+
+&lt;p&gt;詳細, 参加登録はこちらから: &lt;a href="http://connpass.com/event/1664/"&gt;JavaScript 道場 - connpass&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;みなさまのご参加、心よりお待ちしております:-)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sapporo.js-2012.12.16 を開催します</title>
+    <link rel="alternate" href="/news/2012/11/29/sapporo.js-2012.12.16.html"/>
+    <id>/news/2012/11/29/sapporo.js-2012.12.16.html</id>
+    <published>2012-11-29T00:00:00Z</published>
+    <updated>2012-11-29T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="sapporojs-20121216"&gt;Sapporo.js-2012.12.16&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;Sapporo.js-2012.12.16&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ひとこと自己紹介
+参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
+  &lt;li&gt;一般発表
+絶賛募集中！&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;初めてのご参加でも問題のない内容となっております。
+興味がある方はぜひぜひご参加...&lt;/p&gt;</summary>
+    <content type="html">&lt;h2 id="sapporojs-20121216"&gt;Sapporo.js-2012.12.16&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;Sapporo.js-2012.12.16&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ひとこと自己紹介
+参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
+  &lt;li&gt;一般発表
+絶賛募集中！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;初めてのご参加でも問題のない内容となっております。
+興味がある方はぜひぜひご参加ください:-)&lt;/p&gt;
+
+&lt;p&gt;Sapporo.js では、一般発表をしてくださる方を積極的に募集しています。&lt;br /&gt;
+研究/勉強の成果を発表してみたい方や、作ったアプリを自慢したい方など、&lt;br /&gt;
+我こそは！と思う方はこの機会に発表してみませんか！？&lt;br /&gt;
+概要を添えて、 &lt;a href="http://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt; までtwitterでお知らせください。&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;場所&lt;/h3&gt;
+
+&lt;p&gt;札幌市東区民センター 和室さくら (北海道札幌市東区北１１条東７丁目１−１)&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;時間&lt;/h3&gt;
+
+&lt;p&gt;2012/12/16 13:30〜16:30&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;申し込み&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;こちら&lt;/a&gt; (connpass)からご登録ください&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;その他&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;参加費：200円くらい(当日、会場にて頂戴いたします)&lt;/li&gt;
+  &lt;li&gt;wifiなし&lt;/li&gt;
+  &lt;li&gt;電源あり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;みなさま、お誘いあわせの上、どうぞご参加ください:D&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sapporo.js-2012.08.26 を開催します</title>
+    <link rel="alternate" href="/news/2012/08/07/sapporo.js-2012.08.26.html"/>
+    <id>/news/2012/08/07/sapporo.js-2012.08.26.html</id>
+    <published>2012-08-07T00:00:00Z</published>
+    <updated>2012-08-07T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="sapporojs-20120826"&gt;Sapporo.js-2012.08.26&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/863/"&gt;Sapporo.js-2012.08.26&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ひとこと自己紹介
+参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
+  &lt;li&gt;一般発表
+(募集中)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;興味ある方はぜひぜひご参加ください:-)&lt;/p&gt;
+
+&lt;p&gt;Sapporo.js では、一般発表を...&lt;/p&gt;</summary>
+    <content type="html">&lt;h2 id="sapporojs-20120826"&gt;Sapporo.js-2012.08.26&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/863/"&gt;Sapporo.js-2012.08.26&lt;/a&gt; を開催します&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ひとこと自己紹介
+参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
+  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
+『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
+  &lt;li&gt;一般発表
+(募集中)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;興味ある方はぜひぜひご参加ください:-)&lt;/p&gt;
+
+&lt;p&gt;Sapporo.js では、一般発表をしてくださる方を積極的に募集しています。&lt;br /&gt;
+研究/勉強の成果を発表してみたい方や、作ったアプリを自慢したい方など、&lt;br /&gt;
+我こそは！と思う方はこの機会に発表してみませんか！？&lt;br /&gt;
+概要を添えて、 &lt;a href="http://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt; までtwitterでお知らせください。&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;場所&lt;/h3&gt;
+
+&lt;p&gt;札幌市東区民センター 講義室 (北海道札幌市東区北１１条東７丁目１−１)&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;時間&lt;/h3&gt;
+
+&lt;p&gt;2012/08/26 13:30〜16:30&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;申し込み&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://connpass.com/event/863/"&gt;こちら&lt;/a&gt; (connpass)からご登録ください&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;その他&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;参加費：無料(一般社団法人LOCAL様からの支援です！) &lt;del&gt;200円くらい&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;wifiなし&lt;/li&gt;
+  &lt;li&gt;電源あり&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;みなさま、お誘いあわせの上、どうぞご参加ください:D&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>2012年度Local感謝賞をいただきました</title>
+    <link rel="alternate" href="/news/2012/06/21/thanks-for-local.html"/>
+    <id>/news/2012/06/21/thanks-for-local.html</id>
+    <published>2012-06-21T00:00:00Z</published>
+    <updated>2012-06-21T00:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="local"&gt;2012年度LOCAL感謝賞をいただきました&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.ospn.jp/osc2012-do/"&gt;オープンソースカンファレンス2012 Hokkaido&lt;/a&gt; にて、 &lt;a href="http://www.local.or.jp/"&gt;一般社団法人LOCAL&lt;/a&gt; 様より 感謝賞をいただきました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.local.or.jp/2012/06/929.html"&gt;2012年度 LOCAL感謝賞&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;感謝賞をくださった LOCAL 様に感謝の気持ちを表します。&lt;/p&gt;
+
+&lt;p&gt;今後も今までどおり、 JavaScript を好きな人たちが集まるコミュニティでありたいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://sapporojs.org"&gt;Sapporo.js&lt;/a&gt; に参加されたことのある方もない方も、
+今後ともよろしくお願いいたします。&lt;/p&gt;
+</summary>
+    <content type="html">&lt;h2 id="local"&gt;2012年度LOCAL感謝賞をいただきました&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.ospn.jp/osc2012-do/"&gt;オープンソースカンファレンス2012 Hokkaido&lt;/a&gt; にて、 &lt;a href="http://www.local.or.jp/"&gt;一般社団法人LOCAL&lt;/a&gt; 様より 感謝賞をいただきました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.local.or.jp/2012/06/929.html"&gt;2012年度 LOCAL感謝賞&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;感謝賞をくださった LOCAL 様に感謝の気持ちを表します。&lt;/p&gt;
+
+&lt;p&gt;今後も今までどおり、 JavaScript を好きな人たちが集まるコミュニティでありたいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://sapporojs.org"&gt;Sapporo.js&lt;/a&gt; に参加されたことのある方もない方も、
+今後ともよろしくお願いいたします。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
