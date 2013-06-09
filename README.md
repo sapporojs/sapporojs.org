@@ -28,8 +28,6 @@ $ bundle exec middleman server
 
 ## ML
 
-Here:
-
 * http://qwik.jp/sapporojs/
 
 ## How to join as a member
