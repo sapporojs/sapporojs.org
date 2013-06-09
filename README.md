@@ -32,6 +32,11 @@ Here:
 
 * http://qwik.jp/sapporojs/
 
-## How to Collaborate
+## How to join as a member
+
+You can join as a [member](http://sapporojs.org/#members).
+Please edit [`data/members.yml`](https://github.com/sapporojs/sapporojs.org/blob/master/data/members.yml) and send [Pull Request](https://help.github.com/articles/using-pull-requests) to this repository.
+
+## How to collaborate
 
 Pull Requests and issues are always welcome :-)
