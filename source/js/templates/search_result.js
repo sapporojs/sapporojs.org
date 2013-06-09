@@ -1,3 +1,5 @@
+// TODO Rewrite with handlebars
+
 Ember.TEMPLATES['search_result'] = Ember.Handlebars.compile([
   '<div id="modal-wrapper">',
     '<div id="modal-container">',

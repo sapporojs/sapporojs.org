@@ -1,4 +1,4 @@
-// TODO Extract to other files
+// TODO Rewrite with handlebars
 
 Ember.TEMPLATES['search/form'] = Ember.Handlebars.compile([
   '{{#view Sapporojs.SearchView}}',
