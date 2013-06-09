@@ -3,7 +3,7 @@ Sapporojs.SearchResultController = Ember.ArrayController.extend({
   query: null,
   blogs: Ember.A(),
 
-  searchRegExps: Ember.computed(function() {
+  searchQueries: Ember.computed(function() {
     var query = this.get('query');
     var escaped = String(query).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     var queries = Ember.A(escaped.split(/ +/)).filter(Boolean);
@@ -14,14 +14,14 @@ Sapporojs.SearchResultController = Ember.ArrayController.extend({
   }).property('query'),
 
   content: Ember.computed(function() {
-    var searchRegExps = this.get('searchRegExps');
+    var searchQueries = this.get('searchQueries');
 
     var result = this.get('blogs').filter(function(blog) {
-      return searchRegExps.every(function(reg) {
+      return searchQueries.every(function(reg) {
         return blog.isMatchedWith(reg);
       })
     });
 
     return result;
-  }).property('searchRegExps')
+  }).property('searchQueries')
 });
