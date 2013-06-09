@@ -1,22 +1,54 @@
-desc 'Publish website'
-task :publish do
-  target = 'gh-pages'
+MASTER_REPOSITORY = 'git@github.com:sapporojs/sapporojs.org.git'
+PUBLISH_BRANCH = 'gh-pages'
 
-  # XXX Use git repository if it already exist
-  system 'rm -rf build'
-  mkdir_p 'build'
+def initialize_repository(repository, branch)
+  require 'fileutils'
 
-  system "git clone git@github.com:sapporojs/sapporojs.org.git build"
-
-  Dir.chdir 'build' do
-    system "git checkout #{target}"
+  if Dir['build/.git'].empty?
+    FileUtils.rm_rf 'build'
+    sh "git clone #{repository} build"
   end
 
-  system 'bundle exec middleman build'
+  Dir.chdir 'build' do
+    sh "git checkout #{branch}"
+  end
+end
+
+def build
+  sh 'bundle exec middleman build'
+end
+
+def clean
+  require 'fileutils'
+
+  Dir['build/*'].each do |file|
+    FileUtils.rm_rf file
+  end
+end
+
+desc 'Clean built files'
+task :clean do
+  clean
+end
+
+desc 'Build sites'
+task :build do
+  build
+end
+
+desc 'Publish website'
+task :publish do
+  initialize_repository MASTER_REPOSITORY, PUBLISH_BRANCH
+
+  clean
+
+  build
+
+  sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
   Dir.chdir 'build' do
-    system 'git add -A'
-    system 'git commit -m "Update"' # TODO Modify message to use commit sha1
-    system "git push origin #{target}"
+    sh 'git add -A'
+    sh "git commit -m 'Update with #{sha1}'"
+    sh "git push origin #{PUBLISH_BRANCH}"
   end
 end
