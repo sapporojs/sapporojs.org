@@ -40,6 +40,11 @@ desc 'Publish website'
 task :publish do
   initialize_repository MASTER_REPOSITORY, PUBLISH_BRANCH
 
+  Dir.chdir 'build' do
+    sh 'git fetch origin'
+    sh "git reset --hard origin/#{PUBLISH_BRANCH}"
+  end
+
   clean
 
   build
