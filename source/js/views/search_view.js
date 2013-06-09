@@ -44,6 +44,24 @@ Sapporojs.SearchResultView = Ember.View.extend({
   }, 'controller.showModal'),
 });
 
+Sapporojs.SearchResultTextView = Ember.View.extend({
+  tagName: 'span',
+  templateName: 'search_result_text',
+  classNames: ['search-result-text'],
+
+  resultText: Ember.computed(function() {
+    var count = this.get('controller.length');
+
+    if (count <= 0) {
+      return '';
+    } else if (count === 1) {
+      return 'result'
+    } else {
+      return 'results';
+    }
+  }).property('controller.length')
+});
+
 Sapporojs.ModalBgView = Ember.View.extend({
   elementId: 'modal-background',
 
