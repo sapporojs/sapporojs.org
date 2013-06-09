@@ -42,7 +42,7 @@ $modal-width: 950px;
 
   li {
     list-style-type: none;
-    border-bottom: 1px dotted;
+    border-top: 1px dotted;
     line-height: $padding-scale * 8;
     padding-bottom: $padding-scale * 6;
   }
@@ -55,6 +55,16 @@ $modal-width: 950px;
   .results {
     font-size: $base-font-size * 0.9;
     margin-top: 50px;
+  }
+}
+
+.search-result-text {
+  color: $text-color * 2.5;
+  margin-bottom: $padding-scale * 2;
+  display: inline-block;
+
+  strong {
+    font-size: $base-font-size * 1.1;
   }
 }
 
