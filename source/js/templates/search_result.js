@@ -3,7 +3,7 @@
 Ember.TEMPLATES['search_result'] = Ember.Handlebars.compile([
   '<div id="modal-wrapper">',
     '<div id="modal-container">',
-      '{{view Sapporojs.SearchTextFieldView}}',
+      '{{view Sapporojs.SearchTextFieldView valueBinding=controller.query}}',
       '<ul class="results">',
         '{{view Sapporojs.SearchResultTextView}}',
         '{{#each controller}}',
