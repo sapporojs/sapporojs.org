@@ -17,7 +17,7 @@ $ cd sapporojs.org
 Using [Bundler](http://gembundler.com/).
 
 ```sh
-$ bunlde install
+$ bundle install
 ```
 
 ## Boot
