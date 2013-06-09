@@ -10,4 +10,5 @@ end
 
 folder 'source/images/vendor/' do
   file 'wall-paper.jpg', 'http://www.unsigneddesign.com/White_Grunge/LT_WhiteGrunge_01.jpg'
+  file 'search-icon.png', 'http://www.material-land.com/material/3062.png'
 end

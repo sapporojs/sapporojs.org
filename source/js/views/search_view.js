@@ -19,6 +19,11 @@ Sapporojs.SearchView = Ember.View.extend({
 Sapporojs.SearchTextFieldView = Ember.TextField.extend({
   name: 'query',
   classNames: ['search-textfield'],
+  autocomplete: 'off',
+  autocorrect: 'off',
+  autocapitalize: 'off',
+  attributeBindings: ['autocomplete', 'autocorrect', 'autocapitalize'],
+
   valueBinding: 'controller.query'
 });
 

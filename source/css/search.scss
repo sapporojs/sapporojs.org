@@ -59,7 +59,7 @@ $modal-width: 950px;
 }
 
 #modal-wrapper {
-  background: #fff;
+  background-color: $background-color * 6;
   width: $modal-width;
   margin: 30px auto;
   position: relative;
@@ -73,6 +73,17 @@ $modal-width: 950px;
 
 #modal-container {
   padding: $padding-scale * 8 $padding-scale * 30;
+}
+
+$search-field-height: 24px;
+
+.search-textfield {
+  background: image-url('vendor/search-icon.png') no-repeat left center;
+  height: $search-field-height;
+  display: inline-block;
+  background-size: contain;
+  padding-left: $search-field-height + 4;
+  @include radius(1px);
 }
 
 #modal-background {
