@@ -44,14 +44,18 @@ header {
   padding: 0;
 
   h1 {
-    font-size: $base-font-size * 3.2;
+    font-size: $base-font-size * 5.0;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
   }
 }
 
+#header-menu {
+  float: right;
+}
+
 nav {
   ul {
-    float: right;
     list-style: none;
 
     li {
