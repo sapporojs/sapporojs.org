@@ -10,7 +10,7 @@ Sapporojs.IndexRoute = Ember.Route.extend({
   renderTemplate: function() {
     var controller = this.controllerFor('searchResult');
 
-    this.render('search/form', {
+    this.render('search_form', {
       controller: controller
     });
   }
