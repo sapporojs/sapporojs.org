@@ -2,7 +2,7 @@ language: ruby
 rvm: 2.0.0
 script: bundle exec middleman build
 after_success:
-  - bash -c '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec rake publish'
+  - bash -c '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && bundle exec rake publish'
 
 env:
   global:
