@@ -1,7 +1,7 @@
 MASTER_REPOSITORY = if ENV['GH_TOKEN']
     "https://#{ENV['GH_TOKEN']}@github.com/sapporojs/sapporojs.org"
   else
-    'git://github.com/sapporojs/sapporojs.org.git'
+    'git@github.com:sapporojs/sapporojs.org.git'
   end
 PUBLISH_BRANCH = 'gh-pages'
 
