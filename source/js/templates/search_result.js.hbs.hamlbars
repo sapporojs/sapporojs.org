@@ -1,0 +1,11 @@
+#modal-wrapper
+  #modal-container
+    = hb 'view Sapporojs.SearchTextFieldView valueBinding=controller.query'
+    %ul.results
+      = hb 'view Sapporojs.SearchResultTextView'
+      = hb 'each controller' do
+        %li
+          %h2
+            %a{bind: {href: 'url'}}= hb 'title'
+          = hb 'summary_text'
+= hb 'view Sapporojs.ModalBgView controllerBinding="controller"'

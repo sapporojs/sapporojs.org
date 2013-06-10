@@ -1,0 +1,8 @@
+= hb 'if controller.length' do
+  Showing <strong>all #{hb 'controller.length'}</strong> #{hb 'view.resultText'} for
+
+= hb 'unless controller.length' do
+  No results found for
+
+%strong
+  %i= hb 'query'

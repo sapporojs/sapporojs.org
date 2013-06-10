@@ -7,6 +7,7 @@ gem 'middleman-blog'
 gem 'ember-middleman', github: 'tricknotes/ember-middleman'
 gem 'ember-source', '1.0.0.rc5'
 gem 'handlebars-source', '1.0.0.rc4'
+gem 'hamlbars'
 
 gem 'nokogiri'
 gem 'builder'

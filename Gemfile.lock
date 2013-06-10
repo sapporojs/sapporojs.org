@@ -41,6 +41,11 @@ GEM
     fssm (0.2.10)
     haml (4.0.3)
       tilt
+    hamlbars (2.0.0)
+      execjs (>= 1.2)
+      haml
+      sprockets
+      tilt
     handlebars-source (1.0.0.rc4)
     hike (1.2.3)
     http_router (0.10.2)
@@ -142,6 +147,7 @@ DEPENDENCIES
   builder
   ember-middleman!
   ember-source (= 1.0.0.rc5)
+  hamlbars
   handlebars-source (= 1.0.0.rc4)
   middleman (~> 3.1.0.rc.1)
   middleman-blog
