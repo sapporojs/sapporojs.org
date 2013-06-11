@@ -1,9 +1,26 @@
+GIT
+  remote: git://github.com/tricknotes/ember-middleman.git
+  revision: 856d7283f9081d749ffcf80823c3915c1c6e7322
+  specs:
+    ember-middleman (0.0.1)
+      barber
+      ember-data-source
+      ember-source
+      handlebars-source (>= 1.0.0.rc2)
+      middleman-core (~> 3.0)
+      middleman-more (~> 3.0)
+      middleman-sprockets (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    barber (0.4.2)
+      ember-source
+      execjs
+      handlebars-source
     builder (3.2.2)
     chunky_png (1.2.8)
     coffee-script (2.2.0)
@@ -14,12 +31,17 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    ember-data-source (0.13)
+      ember-source
+    ember-source (1.0.0.rc5)
+      handlebars-source (= 1.0.0.rc4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.8.1)
     fssm (0.2.10)
     haml (4.0.3)
       tilt
+    handlebars-source (1.0.0.rc4)
     hike (1.2.3)
     http_router (0.10.2)
       rack (>= 1.0.0)
@@ -118,6 +140,9 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  ember-middleman!
+  ember-source (= 1.0.0.rc5)
+  handlebars-source (= 1.0.0.rc4)
   middleman (~> 3.1.0.rc.1)
   middleman-blog
   nokogiri

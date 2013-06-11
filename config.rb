@@ -20,3 +20,5 @@ data.tags.each do |tag|
   proxy "/tag/#{tag}", 'tag.html', locals: {tag: tag}
 end
 ignore '/tag.html'
+
+activate :ember
