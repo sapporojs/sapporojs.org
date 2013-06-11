@@ -1,5 +1,5 @@
 //=require ./vendor/jquery
-//=require ./vendor/handlebars
-//=require ./vendor/ember
+//=require handlebars
+//=require ember
 //
 //=require app
