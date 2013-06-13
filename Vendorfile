@@ -3,9 +3,7 @@ folder 'source/css/vendor/' do
 end
 
 folder 'source/js/vendor/' do
-  file 'ember.js',      'http://builds.emberjs.com/ember-latest.js'
-  file 'handlebars.js', 'https://raw.github.com/wycats/handlebars.js/1.0.0-rc.4/dist/handlebars.js'
-  file 'jquery.js',     'http://code.jquery.com/jquery-1.10.1.js'
+  file 'jquery.js', 'http://code.jquery.com/jquery-1.10.1.js'
 end
 
 folder 'source/images/vendor/' do
