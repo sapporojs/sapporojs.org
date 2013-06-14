@@ -48,6 +48,12 @@ def push_to_gh_pages(repository, branch)
   end
 end
 
+desc 'Setup origin repository for GitHub pages'
+task :setup do
+  initialize_repository MASTER_REPOSITORY, PUBLISH_BRANCH
+  update_repository PUBLISH_BRANCH
+end
+
 desc 'Clean built files'
 task :clean do
   clean
@@ -55,14 +61,11 @@ end
 
 desc 'Build sites'
 task :build do
+  clean
   build
 end
 
 desc 'Publish website'
 task :publish do
-  initialize_repository MASTER_REPOSITORY, PUBLISH_BRANCH
-  update_repository PUBLISH_BRANCH
-  clean
-  build
   push_to_gh_pages MASTER_REPOSITORY, PUBLISH_BRANCH
 end
