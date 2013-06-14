@@ -48,7 +48,7 @@
               - data.members.each do |member|
                 %li
                   - name = member.name
-                  = link_to member.link, title: name do
+                  %a{href: member.link, title: name}
                     = image_tag "http://www.gravatar.com/avatar/#{member.gravatar}?s=24", width: 24, height: 24, alt: name, title: name
 
           #footer-right
