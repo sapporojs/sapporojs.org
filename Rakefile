@@ -4,22 +4,23 @@ MASTER_REPOSITORY = if ENV['GH_TOKEN']
     'git@github.com:sapporojs/sapporojs.org.git'
   end
 PUBLISH_BRANCH = 'gh-pages'
+DEST_DIR = 'build'
 
 def initialize_repository(repository, branch)
   require 'fileutils'
 
-  if Dir['build/.git'].empty?
-    FileUtils.rm_rf 'build'
-    sh "git clone #{repository} build"
+  if Dir["#{DEST_DIR}/.git"].empty?
+    FileUtils.rm_rf DEST_DIR
+    sh "git clone #{repository} #{DEST_DIR}"
   end
 
-  Dir.chdir 'build' do
+  Dir.chdir DEST_DIR do
     sh "git checkout --orphan #{branch}"
   end
 end
 
 def update_repository(branch)
-  Dir.chdir 'build' do
+  Dir.chdir DEST_DIR do
     sh 'git fetch origin'
     sh "git reset --hard origin/#{branch}"
   end
@@ -32,7 +33,7 @@ end
 def clean
   require 'fileutils'
 
-  Dir['build/*'].each do |file|
+  Dir["#{DEST_DIR}/*"].each do |file|
     FileUtils.rm_rf file
   end
 end
@@ -40,7 +41,7 @@ end
 def push_to_gh_pages(repository, branch)
   sha1, _ = `git log -n 1 --oneline`.strip.split(' ')
 
-  Dir.chdir 'build' do
+  Dir.chdir DEST_DIR do
     sh 'git add -A'
     sh "git commit -m 'Update with #{sha1}'"
     sh "git push #{repository} #{branch}"
