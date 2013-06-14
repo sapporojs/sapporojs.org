@@ -14,7 +14,7 @@ def initialize_repository(repository, branch)
   end
 
   Dir.chdir 'build' do
-    sh "git checkout #{branch}"
+    sh "git checkout --orphan #{branch}"
   end
 end
 
