@@ -1,10 +1,10 @@
 language: ruby
 rvm: 2.0.0
 before_script:
-  - bash -c '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake setup'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake setup'
 script: rake build
 after_success:
-  - bash -c '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish'
 
 env:
   global:
