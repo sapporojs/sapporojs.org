@@ -1,0 +1,49 @@
+---
+title: Sapporo.js-2013.07.27 を開催します
+tags: sapporojs
+layout: news_layout
+---
+## Sapporo.js-2013.07.27
+
+### 概要
+
+[Sapporo.js-2013.07.27](http://connpass.com/event/2741/) を開催します
+
+内容
+
++ ひとこと自己紹介
++ 『JavaScript: The Good Parts』の読み合わせ
+  『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めながら写経してきます。
+興味ある方はぜひぜひご参加ください:-)
++ 一般発表
+
+  * Getting Started with Knockout.js (仮) - [@iakio](https://twitter.com/iakio)
+  * How to relaunch "[sapporojs.org](http://sapporojs.org)" - [@tricknotes](https://twitter.com/tricknotes)
+
+また、Sapporo.js では、一般発表をしてくださる方を積極的に募集しています。
+
+研究/勉強の成果を発表してみたい方や、作ったアプリを自慢したい方など、我こそは！と思う方はこの機会に発表してみませんか!?
+
+概要を添えて、 [@tricknotes](http://twitter.com/tricknotes) までtwitterでお知らせください。
+
+### 場所
+
+札幌市東区民センター 別館村川ビル 集会室B講義室 (札幌市東区 北11条東7丁目1-1)
+
+### 時間
+
+2013.07.27 13:00〜16:30
+
+### 参加登録
+
+こちらからご登録ください: [Sapporo.js-2013.07.27](http://connpass.com/event/2741/) (connpass)
+
+### その他
+
+* 参加費： 200円くらい
+* wifiなし
+* 電源あり
+
+興味ある方はぜひぜひご参加ください:-)
+
+初めてでも気軽にご参加いただける内容となっております。
