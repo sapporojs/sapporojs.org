@@ -10,8 +10,6 @@ Sapporojs.Blog = Ember.Object.extend({
 Sapporojs.Blog.reopenClass({
   _content: Ember.A(),
 
-  _loaded: false,
-
   load: function(json) {
     var content = Sapporojs.Blog._content;
     var forEach = Ember.ArrayPolyfills.forEach;
