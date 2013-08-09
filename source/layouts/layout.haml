@@ -12,6 +12,10 @@
     -# %meta{property: 'og:image', content: ''}
     %meta{property: 'og:description', content: data.information.description}
 
+    %title
+      - title = current_page.title.presence if current_page.respond_to?(:title)
+      = [title, data.information.name].compact.join(' | ')
+
     = stylesheet_link_tag 'style'
   %body
     /[if lte IE 8]
