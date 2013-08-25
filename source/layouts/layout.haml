@@ -13,7 +13,7 @@
     %meta{property: 'og:description', content: data.information.description}
 
     %title
-      - title = current_page.title.presence if current_page.respond_to?(:title)
+      - title = current_page.data.title.presence
       = [title, data.information.name].compact.join(' | ')
 
     = stylesheet_link_tag 'style'
