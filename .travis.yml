@@ -9,9 +9,9 @@ after_success:
 env:
   global:
     - secure: |-
-        CtCYjJfYm+OR85PX9Ey/ICYje/mNycbrXR+CV1F2UfXWlgVUb0qSu0LDlYQb
-        TUwCnW/ljMb2uH32E2W/0W6/I9QEb8WkoPEhsKwArfAKvJPh+MCko1QkeDpu
-        g5bXzRyTlms5dBrOFMKT7KaTF6W4EvdevBDAS51nY/jYySpStPk=
+        hcYBqcGv8TL+xFy8JDfcNEYaXtrT+5GM+obus6TARrGRyyaWCVrSxhahYNBr
+        xi9BQQjXl+QxGhM/zOSMy0T4m09UbIG8tdeaiB7Mb2jvtQrmqde7eXhJpAtm
+        KwDxn2OBARSDFGYA3E8p5F1IoKJW3gjLQiTRRYt6dLbB19hvjDA=
     - secure: |-
         UoBRLTGs6aydk4jHitA48BQnhZ8r1Gb77JKitMUgJAZ3HjgpllqhpyB0CP23
         OoXHgywjQ0Jmn3dbXC7V59YwOWgfo87K/FuRUhGXm5/8G3YXPGlDBxV7XTD4
