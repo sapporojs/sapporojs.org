@@ -1,5 +1,5 @@
 MASTER_REPOSITORY = if ENV['GH_TOKEN']
-    "https://#{ENV['GH_TOKEN']}@github.com/sapporojs/sapporojs.org"
+    'https://$GH_TOKEN@github.com/sapporojs/sapporojs.org'
   else
     'git@github.com:sapporojs/sapporojs.org.git'
   end
@@ -11,7 +11,7 @@ def initialize_repository(repository, branch)
 
   if Dir["#{DEST_DIR}/.git"].empty?
     FileUtils.rm_rf DEST_DIR
-    sh "git clone #{repository} #{DEST_DIR}"
+    system "git clone --quiet #{repository} #{DEST_DIR} 2> /dev/null"
   end
 
   Dir.chdir DEST_DIR do
@@ -44,7 +44,7 @@ def push_to_gh_pages(repository, branch)
   Dir.chdir DEST_DIR do
     sh 'git add -A'
     sh "git commit -m 'Update with #{sha1}'"
-    sh "git push #{repository} #{branch}"
+    system "git push --quiet #{repository} #{branch} 2> /dev/null"
   end
 end
 
