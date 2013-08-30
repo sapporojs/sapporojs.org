@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/tricknotes/ember-middleman.git
-  revision: 831aeb47d0464b3e35ab681b4e69c0dbc34a49fa
+  revision: f136e7f68b9ecffdb53532328a4be6f26863d4b1
   specs:
     ember-middleman (0.0.4)
       barber
@@ -33,7 +33,7 @@ GEM
       sass (~> 3.1)
     ember-data-source (0.13)
       ember-source
-    ember-source (1.0.0.rc7)
+    ember-source (1.0.0.rc8)
       handlebars-source (= 1.0.12)
     execjs (1.4.0)
       multi_json (~> 1.0)
