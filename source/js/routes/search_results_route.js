@@ -3,10 +3,6 @@ Sapporojs.SearchResultsRoute = Ember.Route.extend({
     return Sapporojs.Blog.all();
   },
 
-  setupController: function(controller, model) {
-    this.controllerFor('searchResults').set('blogs', model);
-  },
-
   renderTemplate: function() {
     var controller = this.controllerFor('searchResults');
 

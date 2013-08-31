@@ -1,8 +1,8 @@
-= hb 'if controller.length' do
+= hb 'if controller.matchedCount' do
   Showing <strong>all #{hb 'controller.length'}</strong> #{hb 'view.resultText'} for
 
-= hb 'unless controller.length' do
+= hb 'unless controller.matchedCount' do
   No results found for
 
 %strong
-  %i= hb 'query'
+  %i= hb 'controllers.query.content'

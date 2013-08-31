@@ -3,7 +3,7 @@ Sapporojs.SearchView = Ember.View.extend({
   tagName: 'form',
 
   submit: function(e) {
-    var query = this.get('controller.query');
+    var query = this.get('controller.controllers.query.content');
 
     if (!query) {
       return false;
@@ -48,7 +48,7 @@ Sapporojs.SearchResultTextView = Ember.View.extend({
   classNames: ['search-result-text'],
 
   resultText: Ember.computed(function() {
-    var count = this.get('controller.length');
+    var count = this.get('controller.matchedCount');
 
     if (count <= 0) {
       return '';
@@ -57,7 +57,7 @@ Sapporojs.SearchResultTextView = Ember.View.extend({
     } else {
       return 'results';
     }
-  }).property('controller.length')
+  }).property('controller.matchedCount')
 });
 
 Sapporojs.ModalBgView = Ember.View.extend({
