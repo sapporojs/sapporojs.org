@@ -1,4 +1,6 @@
 Sapporojs.SearchResultsController = Ember.ArrayController.extend({
+  itemController: 'searchResult',
+
   showModal: false,
   query: null,
   blogs: Ember.A(),
