@@ -8,5 +8,5 @@
           %li
             %h2
               %a{bind: {href: 'url'}}= hb 'title'
-            = hb 'summary_text'
+            = hb 'highlightSummary'
 = hb 'view Sapporojs.ModalBgView controllerBinding="controller"'
