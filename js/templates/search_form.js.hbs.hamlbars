@@ -9,7 +9,7 @@ function program1(depth0,data) {
   hashContexts = {'valueBinding': depth0};
   hashTypes = {'valueBinding': "ID"};
   data.buffer.push(escapeExpression(helpers.view.call(depth0, "Sapporojs.SearchTextFieldView", {hash:{
-    'valueBinding': ("controller.query")
+    'valueBinding': ("controllers.query.content")
   },contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
   }
 

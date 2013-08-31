@@ -5,6 +5,15 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 
 function program1(depth0,data) {
   
+  var stack1, hashTypes, hashContexts;
+  hashTypes = {};
+  hashContexts = {};
+  stack1 = helpers['if'].call(depth0, "isMatchedQueries", {hash:{},inverse:self.noop,fn:self.program(2, program2, data),contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  else { data.buffer.push(''); }
+  }
+function program2(depth0,data) {
+  
   var buffer = '', hashContexts, hashTypes;
   data.buffer.push("<li>\n        <h2>\n          <a ");
   hashContexts = {'href': depth0};
@@ -19,7 +28,7 @@ function program1(depth0,data) {
   data.buffer.push("</a>\n        </h2>\n        ");
   hashTypes = {};
   hashContexts = {};
-  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "summary_text", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "highlightSummary", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
   data.buffer.push("\n      </li>");
   return buffer;
   }
@@ -28,7 +37,7 @@ function program1(depth0,data) {
   hashContexts = {'valueBinding': depth0};
   hashTypes = {'valueBinding': "ID"};
   data.buffer.push(escapeExpression(helpers.view.call(depth0, "Sapporojs.SearchTextFieldView", {hash:{
-    'valueBinding': ("controller.query")
+    'valueBinding': ("controllers.query.content")
   },contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
   data.buffer.push("\n    <ul class='results'>\n      ");
   hashTypes = {};

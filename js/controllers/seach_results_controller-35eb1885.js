@@ -1,0 +1,1 @@
+Sapporojs.SearchResultsController=Ember.ArrayController.extend({itemController:"searchResult",needs:["query"],showModal:!1,matchedCount:Ember.computed(function(){var e=this.filter(function(e){return e.get("isMatchedQueries")});return e.length}).property("content.[]","controllers.query.content")});

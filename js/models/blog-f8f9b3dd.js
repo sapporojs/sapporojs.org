@@ -1,0 +1,1 @@
+Sapporojs.Blog=Ember.Object.extend({}),Sapporojs.Blog.reopenClass({_content:Ember.A(),load:function(o){var r=Sapporojs.Blog._content,e=Ember.ArrayPolyfills.forEach;e.call(o,function(o){var e=Sapporojs.Blog.create(o);r.pushObject(e)})},all:function(){return this._content}});
