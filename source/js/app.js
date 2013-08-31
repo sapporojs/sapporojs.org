@@ -8,5 +8,8 @@
 //=require router
 
 Sapporojs = Ember.Application.create({
-  rootElement: '#search-application'
+  rootElement: '#search-application',
+
+  LOG_TRANSITIONS:  ENV.BUILD_ENV === 'development',
+  LOG_VIEW_LOOKUPS: ENV.BUILD_ENV === 'development'
 });
