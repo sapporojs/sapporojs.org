@@ -1,0 +1,1 @@
+window.ENV={BUILD_ENV:"production",LOG_VERSION:!1,EXTEND_PROTOTYPES:!1};
