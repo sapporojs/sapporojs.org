@@ -6,8 +6,8 @@ Sapporojs.QueryController = Ember.ObjectController.extend({
     var escaped = String(query).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     var queries = Ember.A(escaped.split(/ +/)).filter(Boolean);
 
-    return queries.map(function(q) {
+    return Ember.A(queries.map(function(q) {
       return new RegExp(q, 'i');
-    });
+    }));
   }).property('content')
 });
