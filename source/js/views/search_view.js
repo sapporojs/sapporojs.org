@@ -25,9 +25,9 @@ Sapporojs.SearchTextFieldView = Ember.TextField.extend({
   attributeBindings: ['autocomplete', 'autocorrect', 'autocapitalize'],
 });
 
-Sapporojs.SearchResultView = Ember.View.extend({
+Sapporojs.SearchResultsView = Ember.View.extend({
   elementId: 'search-result',
-  templateName: 'search_result',
+  templateName: 'search_results',
 
   updateModal: function() {
     if (this.get('controller.showModal')) {

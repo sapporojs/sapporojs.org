@@ -1,4 +1,4 @@
-Sapporojs.SearchResultController = Ember.ArrayController.extend({
+Sapporojs.SearchResultsController = Ember.ArrayController.extend({
   showModal: false,
   query: null,
   blogs: Ember.A(),
