@@ -1,1 +1,0 @@
-Sapporojs.QueryController=Ember.ObjectController.extend({content:null,searchQueries:Ember.computed(function(){var e=this.get("content"),r=String(e).replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&"),t=Ember.A(r.split(/ +/)).filter(Boolean);return t.map(function(e){return new RegExp(e,"i")})}).property("content")});
