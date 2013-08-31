@@ -1,0 +1,1 @@
+Sapporojs.SearchResultsRoute=Ember.Route.extend({model:function(){return Sapporojs.Blog.all()},setupController:function(e,r){this.controllerFor("searchResults").set("blogs",r)},renderTemplate:function(){var e=this.controllerFor("searchResults");this.render("search_form",{controller:e})}});
