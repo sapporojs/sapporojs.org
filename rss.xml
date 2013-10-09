@@ -4,10 +4,62 @@
   <id>http://sapporojs.org/</id>
   <link href="http://sapporojs.org/"/>
   <link href="http://sapporojs.org/" rel="self"/>
-  <updated>2013-08-11T15:00:00Z</updated>
+  <updated>2013-10-08T15:00:00Z</updated>
   <author>
     <name>Sapporo.js</name>
   </author>
+  <entry>
+    <title>「JavaScript 道場 2013 秋」を開催します</title>
+    <link rel="alternate" href="http://sapporojs.org/news/2013/10/09/jsdojo.html"/>
+    <id>/news/2013/10/09/jsdojo.html</id>
+    <published>2013-10-08T15:00:00Z</published>
+    <updated>2013-10-08T15:00:00Z</updated>
+    <author>
+      <name>Sapporo.js</name>
+    </author>
+    <summary type="html">&lt;h2 id="javascript--2013-"&gt;JavaScript 道場 2013 秋&lt;/h2&gt;
+
+&lt;p&gt;半年ほど前に開催してご好評をいただきました &lt;a href="http://sapporojs.org/news/2013/01/13/jsdojo.html"&gt;JavaScript 道場&lt;/a&gt; をあらためて開催いたします。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://connpass.com/event/3674"&gt;JavaScript 道場 2013 秋 - connpass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3 id="javascript-"&gt;JavaScript 道場とは&lt;/h3&gt;
+
+&lt;p&gt;JavaScript を書いていて困ること・難しいと感じることについて、数人のチームでコードを書きながら一緒に考えていくイベントです。&lt;br&gt;
+一人だと行き詰ってしまうような問題でも、 みんなで話し合いながらコードを書くことで解決のヒントが見えてくるかもし...&lt;/p&gt;</summary>
+    <content type="html">&lt;h2 id="javascript--2013-"&gt;JavaScript 道場 2013 秋&lt;/h2&gt;
+
+&lt;p&gt;半年ほど前に開催してご好評をいただきました &lt;a href="http://sapporojs.org/news/2013/01/13/jsdojo.html"&gt;JavaScript 道場&lt;/a&gt; をあらためて開催いたします。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://connpass.com/event/3674"&gt;JavaScript 道場 2013 秋 - connpass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="javascript-"&gt;JavaScript 道場とは&lt;/h3&gt;
+
+&lt;p&gt;JavaScript を書いていて困ること・難しいと感じることについて、数人のチームでコードを書きながら一緒に考えていくイベントです。&lt;br /&gt;
+一人だと行き詰ってしまうような問題でも、 みんなで話し合いながらコードを書くことで解決のヒントが見えてくるかもしれません。&lt;/p&gt;
+
+&lt;h3 id="section"&gt;どんなひと向け?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;普段 JavaScript を書いていて、難しい部分があると感じる方&lt;/li&gt;
+  &lt;li&gt;チームで開発するのが好きな方&lt;/li&gt;
+  &lt;li&gt;JavaScript が好きな方(もしくはキライな方)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-1"&gt;誰か教えてくれるひとはいるの?&lt;/h3&gt;
+
+&lt;p&gt;今回は師範をお迎えすることは予定しておりません。
+ぜひとも、チームで相談して解決を探ってみてください!!&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;その他&lt;/h3&gt;
+
+&lt;p&gt;詳細、参加登録はこちらから: &lt;a href="http://connpass.com/event/3674"&gt;JavaScript 道場 2013 秋 - connpass&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;みなさまのご参加、心よりお待ちしております:-)&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>オープンソースカンファレンス2013 Hokkaido にて講演させていただきます</title>
     <link rel="alternate" href="http://sapporojs.org/news/2013/08/12/osc2013-do.html"/>
@@ -306,76 +358,6 @@ Pull Request や ML, Twitter などでお知らせください。&lt;/p&gt;
 &lt;p&gt;詳細, 参加登録はこちらから: &lt;a href="http://connpass.com/event/1664/"&gt;JavaScript 道場 - connpass&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;みなさまのご参加、心よりお待ちしております:-)&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Sapporo.js-2012.12.16 を開催します</title>
-    <link rel="alternate" href="http://sapporojs.org/news/2012/11/29/sapporo.js-2012.12.16.html"/>
-    <id>/news/2012/11/29/sapporo.js-2012.12.16.html</id>
-    <published>2012-11-28T15:00:00Z</published>
-    <updated>2012-11-28T15:00:00Z</updated>
-    <author>
-      <name>Sapporo.js</name>
-    </author>
-    <summary type="html">&lt;h2 id="sapporojs-20121216"&gt;Sapporo.js-2012.12.16&lt;/h2&gt;
-
-&lt;h3 id="section"&gt;概要&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;Sapporo.js-2012.12.16&lt;/a&gt; を開催します&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ひとこと自己紹介
-参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
-  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
-『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
-  &lt;li&gt;一般発表
-絶賛募集中！&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;初めてのご参加でも問題のない内容となっております。
-興味がある方はぜひぜひご参加...&lt;/p&gt;</summary>
-    <content type="html">&lt;h2 id="sapporojs-20121216"&gt;Sapporo.js-2012.12.16&lt;/h2&gt;
-
-&lt;h3 id="section"&gt;概要&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;Sapporo.js-2012.12.16&lt;/a&gt; を開催します&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ひとこと自己紹介
-参加者のみなさんに簡単に自己紹介をしていただきます。&lt;/li&gt;
-  &lt;li&gt;『JavaScript: The Good Parts』の読み合わせ
-『 JavaScript: The Good Parts ―「良いパーツ」によるベストプラクティス 』を読み進めていきます。&lt;/li&gt;
-  &lt;li&gt;一般発表
-絶賛募集中！&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;初めてのご参加でも問題のない内容となっております。
-興味がある方はぜひぜひご参加ください:-)&lt;/p&gt;
-
-&lt;p&gt;Sapporo.js では、一般発表をしてくださる方を積極的に募集しています。&lt;br /&gt;
-研究/勉強の成果を発表してみたい方や、作ったアプリを自慢したい方など、&lt;br /&gt;
-我こそは！と思う方はこの機会に発表してみませんか！？&lt;br /&gt;
-概要を添えて、 &lt;a href="http://twitter.com/tricknotes"&gt;@tricknotes&lt;/a&gt; までtwitterでお知らせください。&lt;/p&gt;
-
-&lt;h3 id="section-1"&gt;場所&lt;/h3&gt;
-
-&lt;p&gt;札幌市東区民センター 和室さくら (北海道札幌市東区北１１条東７丁目１−１)&lt;/p&gt;
-
-&lt;h3 id="section-2"&gt;時間&lt;/h3&gt;
-
-&lt;p&gt;2012/12/16 13:30〜16:30&lt;/p&gt;
-
-&lt;h3 id="section-3"&gt;申し込み&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="http://connpass.com/event/1368/"&gt;こちら&lt;/a&gt; (connpass)からご登録ください&lt;/p&gt;
-
-&lt;h3 id="section-4"&gt;その他&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;参加費：200円くらい(当日、会場にて頂戴いたします)&lt;/li&gt;
-  &lt;li&gt;wifiなし&lt;/li&gt;
-  &lt;li&gt;電源あり&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;みなさま、お誘いあわせの上、どうぞご参加ください:D&lt;/p&gt;
 </content>
   </entry>
 </feed>
