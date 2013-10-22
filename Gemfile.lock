@@ -33,7 +33,7 @@ GEM
       sass (~> 3.1)
     ember-data-source (0.14)
       ember-source
-    ember-source (1.0.0)
+    ember-source (1.1.0)
       handlebars-source (= 1.0.12)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -123,7 +123,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   ember-middleman!
-  ember-source (~> 1.0.0.rc6.2)
+  ember-source (~> 1.1.0)
   hamlbars
   middleman (~> 3.1.0)
   middleman-blog
