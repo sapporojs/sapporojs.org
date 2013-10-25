@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/tricknotes/ember-middleman.git
-  revision: 40c84e2f6372367893d039bc681cbd514bfb8095
+  revision: f809489cb575f2f518b7c102e8dafefa39aac429
   specs:
     ember-middleman (0.0.4)
       barber
@@ -33,7 +33,7 @@ GEM
       sass (~> 3.1)
     ember-data-source (0.14)
       ember-source
-    ember-source (1.1.0)
+    ember-source (1.1.1)
       handlebars-source (= 1.0.12)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -85,7 +85,7 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    mini_portile (0.5.1)
+    mini_portile (0.5.2)
     multi_json (1.8.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
