@@ -8,6 +8,8 @@ Time.zone = 'Tokyo'
 
 configure :development do
   ENV['BUILD_ENV'] ||= 'development'
+
+  set :debug_assets, true
 end
 
 configure :build do
