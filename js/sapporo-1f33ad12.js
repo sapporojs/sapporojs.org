@@ -1,4 +1,4 @@
-window.ENV={BUILD_ENV:"production",LOG_VERSION:!1,EXTEND_PROTOTYPES:!1},/*!
+window.ENV={BUILD_ENV:"build",LOG_VERSION:!1,EXTEND_PROTOTYPES:!1},/*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
  *
