@@ -33,20 +33,20 @@ GEM
       sass (~> 3.1)
     ember-data-source (0.14)
       ember-source
-    ember-source (1.1.2)
-      handlebars-source (= 1.0.12)
+    ember-source (1.2.0.1)
+      handlebars-source (~> 1.1.2)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
     fssm (0.2.10)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     hamlbars (2.0.1)
       execjs (>= 1.2)
       haml
       sprockets
       tilt
-    handlebars-source (1.0.12)
+    handlebars-source (1.1.2)
     hike (1.2.3)
     i18n (0.6.5)
     kramdown (1.2.0)
@@ -96,7 +96,7 @@ GEM
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
     sass (3.2.12)
-    sprockets (2.10.0)
+    sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -120,7 +120,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   ember-middleman!
-  ember-source (~> 1.1.0)
+  ember-source
   hamlbars
   middleman (~> 3.2.0)
   middleman-blog
