@@ -85,7 +85,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href="http://www.sora-scc.jp/"&gt;札幌コンベンションセンター&lt;/a&gt; (&lt;a href="https://maps.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;hl=ja&amp;amp;ie=UTF8&amp;amp;ll=43.057788,141.388078&amp;amp;spn=0.018877,0.032573&amp;amp;hq=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;t=m&amp;amp;z=15&amp;amp;iwloc=A&amp;amp;brcurrent=3,0x5f0b2bc4d6967837:0x5402e51236d06e2a,0"&gt;地図&lt;/a&gt;)&lt;/li&gt;
+&lt;a href="http://www.sora-scc.jp/"&gt;札幌コンベンションセンター&lt;/a&gt; (&lt;a href="https://maps.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;amp;hl=ja&amp;amp;amp;ie=UTF8&amp;amp;amp;ll=43.057788,141.388078&amp;amp;amp;spn=0.018877,0.032573&amp;amp;amp;hq=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;amp;t=m&amp;amp;amp;z=15&amp;amp;amp;iwloc=A&amp;amp;amp;brcurrent=3,0x5f0b2bc4d6967837:0x5402e51236d06e2a,0"&gt;地図&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;&lt;h2 id="section-2"&gt;概要&lt;/h2&gt;
 
 &lt;p&gt;本講演では、 JavaScript 開発の経験のあるプログラマ向けに、Ember.js の始...&lt;/p&gt;</summary>
@@ -106,7 +106,7 @@
 &lt;h2 id="section-1"&gt;場所&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://www.sora-scc.jp/"&gt;札幌コンベンションセンター&lt;/a&gt; (&lt;a href="https://maps.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;hl=ja&amp;amp;ie=UTF8&amp;amp;ll=43.057788,141.388078&amp;amp;spn=0.018877,0.032573&amp;amp;hq=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;t=m&amp;amp;z=15&amp;amp;iwloc=A&amp;amp;brcurrent=3,0x5f0b2bc4d6967837:0x5402e51236d06e2a,0"&gt;地図&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.sora-scc.jp/"&gt;札幌コンベンションセンター&lt;/a&gt; (&lt;a href="https://maps.google.co.jp/maps?q=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;amp;hl=ja&amp;amp;amp;ie=UTF8&amp;amp;amp;ll=43.057788,141.388078&amp;amp;amp;spn=0.018877,0.032573&amp;amp;amp;hq=%E6%9C%AD%E5%B9%8C%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&amp;amp;amp;t=m&amp;amp;amp;z=15&amp;amp;amp;iwloc=A&amp;amp;amp;brcurrent=3,0x5f0b2bc4d6967837:0x5402e51236d06e2a,0"&gt;地図&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="section-2"&gt;概要&lt;/h2&gt;
