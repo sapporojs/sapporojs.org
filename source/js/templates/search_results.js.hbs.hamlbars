@@ -1,6 +1,6 @@
 #modal-wrapper
   #modal-container
-    = hb 'view Sapporojs.SearchTextFieldView valueBinding=controllers.query.content'
+    = hb 'view Sapporojs.SearchTextFieldView value=controllers.query.content'
     %ul.results
       = hb 'view Sapporojs.SearchResultTextView'
       = hb 'each controller' do
@@ -9,4 +9,4 @@
             %h2
               %a{bind: {href: 'url'}}= hb 'title'
             = hb 'highlightSummary'
-= hb 'view Sapporojs.ModalBgView controllerBinding="controller"'
+= hb 'view Sapporojs.ModalBgView controller=controller'
