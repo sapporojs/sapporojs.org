@@ -6,10 +6,10 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var hashContexts, hashTypes;
-  hashContexts = {'valueBinding': depth0};
-  hashTypes = {'valueBinding': "ID"};
+  hashContexts = {'value': depth0};
+  hashTypes = {'value': "ID"};
   data.buffer.push(escapeExpression(helpers.view.call(depth0, "Sapporojs.SearchTextFieldView", {hash:{
-    'valueBinding': ("controllers.query.content")
+    'value': ("controllers.query.content")
   },contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
   }
 
