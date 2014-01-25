@@ -29,6 +29,7 @@ summary {
 
 audio,
 canvas,
+progress,
 video {
     display: inline-block;
 }
@@ -87,14 +88,6 @@ body {
 
 a {
     background: transparent;
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-
-a:focus {
-    outline: thin dotted;
 }
 
 /**
@@ -249,7 +242,7 @@ svg:not(:root) {
  */
 
 figure {
-    margin: 0;
+    margin: 1em 40px;
 }
 
 /* ==========================================================================
@@ -257,13 +250,15 @@ figure {
    ========================================================================== */
 
 /**
- * Define consistent border, margin, and padding.
+ * 1. Define consistent border, margin, and padding.
+ * 2. Address width being affected by wide descendants in Chrome and Firefox.
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0; /* 1 */
+    margin: 0 2px; /* 1 */
+    min-width: 0; /* 2 */
+    padding: 0.35em 0.625em 0.75em; /* 1 */
 }
 
 /**
@@ -277,18 +272,37 @@ legend {
 }
 
 /**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
+ * 1. Correct color not being inherited in all browsers.
+ *    Known issue: `select` will not inherit color in Chrome and Safari on OS X.
+ * 2. Correct font properties not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
 
 button,
 input,
+optgroup,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 2 */
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
     margin: 0; /* 3 */
+}
+
+/**
+ * Re-apply the `font-weight` to avoid modifying the default UX, and because
+ * the default cannot be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+    font-weight: bold;
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+
+button {
+    overflow: visible;
 }
 
 /**
@@ -296,7 +310,6 @@ textarea {
  * the UA stylesheet.
  */
 
-button,
 input {
     line-height: normal;
 }
@@ -350,6 +363,17 @@ input[type="radio"] {
 }
 
 /**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
@@ -383,13 +407,11 @@ input::-moz-focus-inner {
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
+ * Remove default vertical scrollbar in IE 8/9.
  */
 
 textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
+    overflow: auto;
 }
 
 /* ==========================================================================
@@ -403,4 +425,9 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
 }
