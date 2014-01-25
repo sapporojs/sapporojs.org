@@ -3,7 +3,7 @@ folder 'source/css/vendor/' do
 end
 
 folder 'source/js/vendor/' do
-  file 'jquery.js', 'http://code.jquery.com/jquery-1.10.2.js'
+  file 'jquery.js', 'http://code.jquery.com/jquery-1.11.0.js'
 end
 
 folder 'source/images/vendor/' do
