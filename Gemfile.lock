@@ -1,10 +1,10 @@
 GIT
   remote: git://github.com/tricknotes/ember-middleman.git
-  revision: f809489cb575f2f518b7c102e8dafefa39aac429
+  revision: 985d0a2bbaf7f12aae1e93a5a8377df94109f63b
   specs:
     ember-middleman (0.0.4)
       barber
-      ember-data-source
+      ember-data-source (>= 1.0.0.beta3)
       ember-source
       middleman-core (~> 3.0)
       middleman-more (~> 3.0)
@@ -28,12 +28,12 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    ember-data-source (0.14)
+    ember-data-source (1.0.0.beta.6)
       ember-source
     ember-source (1.3.1.1)
       handlebars-source (~> 1.2.1)
@@ -51,29 +51,30 @@ GEM
     handlebars-source (1.2.1)
     hike (1.2.3)
     i18n (0.6.9)
+    json (1.8.1)
     kramdown (1.3.1)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    middleman (3.2.1)
+    middleman (3.2.2)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.2)
       execjs (~> 1.4.0)
       haml (>= 3.1.6)
       kramdown (~> 1.2)
-      middleman-core (= 3.2.1)
+      middleman-core (= 3.2.2)
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.1.20)
-      uglifier (~> 2.1.0)
+      uglifier (~> 2.4.0)
     middleman-blog (3.5.1)
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
-    middleman-core (3.2.1)
+    middleman-core (3.2.2)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
-      i18n (~> 0.6.1)
+      i18n (~> 0.6.9)
       listen (~> 1.1)
       rack (>= 1.4.5)
       rack-test (~> 0.6.1)
@@ -115,9 +116,9 @@ GEM
     tilt (1.4.1)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
-    uglifier (2.1.2)
+    uglifier (2.4.0)
       execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
+      json (>= 1.8.0)
     vendorer (0.1.14)
 
 PLATFORMS
